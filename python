@@ -1,0 +1,42 @@
+-Introduction to Python
+-Environment setup (software installation).
+-simple program save and run, shell mode, source mode.
+-building blocks of python.
+	* variables?
+	* comment line
+	* print statement,escape sequence, end, sep,%,doc string, type,id
+	* datatypes?
+	* operator?
+	* conversion (str to int, str to float, int to str,float to str,....)
+	* data structure: list,tuple,set,dict (basic)
+	* slicing
+- How to get value at Run time or dynamic?
+- Conditional Branching control statements: simple if, if else, if elif, nested if
+- errors (name,type,value,indent,zerodivision,key,attribute,index,syntax)
+- Conditional looping control statements: while, for,nested loop.
+- jumping statement(pass,continue,break)
+- Built in functions - String functions,math function,random function
+- data structure: list,tuple,set,dict (advanced-inbuilt function)
+- Functions- user define function - 4 types
+- Functions-Recursion, global variable
+- Functions- variable length Arguments-Default, Keyword, Arbitrary
+- Lambda function-(basic lambda, lambda with filter, lambda with map)
+- Modules and Package-User program as modules and Packages.
+- Files-Different types of files-File operation.
+- Errors and Exceptions Handling-Errors. Assert, Try, except, Finally
+- Exceptions Try, Finally, User defined exception.
+- Object Oriented Programming-Class, Object,user defined function(object return),constructor,destructor,Inheritance, and Polymorphism.
+-- access specifier
+- Reference Types- Iterator, Generator.
+- Reference Types -Closure, Decorators.
+- Thread-Multithread.
+- Graphical User Interface-Entry,Text,Password,Listbox,Button,Messagebox,Radiobutton,CheckButton,ShowImage
+- Database Connectivity-Mysql, Create table, Insert table, View the table.
+- Tkinter project (GUI application)
+---------------------------------
+
+===============================
+k=[11,12,34,-12,13,18,-21,44,32,-31]
+test=list(map(lambda var:var+10,k))
+print(test)
+================================
