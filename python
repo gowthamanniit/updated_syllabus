@@ -42,6 +42,88 @@ k=[11,12,34,-12,13,18,-21,44,32,-31]
 test=list(map(lambda var:var+10,k))
 print(test)
 ================================
+address/feedback Text:
+-------------------------
+import tkinter
+window=tkinter.Tk()
+def show1():
+    res=addtb.get(1.0,"end")
+    reslbl.configure(text="Address"+res)
+wi=window.winfo_screenwidth()
+he=window.winfo_screenheight()
+window.configure(width=wi,height=he,bg="yellow")
+addlbl=tkinter.Label(window,text="Enter Your Address:",
+                     font=("arial",20),bg="green",fg="white")
+addlbl.place(x=100,y=200)
+addtb=tkinter.Text(window,width="30",height="7",
+                   font=("arial",17,'bold'),bg="green",fg="white")
+addtb.place(x=350,y=200)
+but1=tkinter.Button(window,text="get address",
+                    font=("arial",17),bg="BLUE",fg="white",command=show1)
+but1.place(x=800,y=300)
+reslbl=tkinter.Label(window,text=".......")
+reslbl.place(x=350,y=450)
+window.mainloop()
+checkbutton with validation:
+--------------------------
+import tkinter
+from tkinter import messagebox
+from tkinter import *
+window=tkinter.Tk()
+wi=window.winfo_screenwidth()
+he=window.winfo_screenheight()
+window.configure(width=wi,height=he,bg="green")
+def show():
+    ans=""
+    if cb1.get():
+        ans=ans+"c "
+    if cb2.get():
+        ans=ans+"c++ "
+    if cb3.get():
+        ans=ans+"java"
+    if cb4.get():
+        ans=ans+"python"
+    if cb5.get():
+        ans="None of these above"
+    messagebox.showinfo("course name:","reslut:"+ans)
+def test():
+    messagebox.showinfo("message:",cb5.get())
+    if cb5.get()==1:
+        c.configure(state='disabled')
+        cpp.configure(state='disabled')
+        j.configure(state='disabled')
+        p.configure(state='disabled')
+    else:
+        c.configure(state='active')
+        cpp.configure(state='active')
+        j.configure(state='active')
+        p.configure(state='active')
+    
+
+cb1=IntVar()
+cb2=IntVar()
+cb3=IntVar()
+cb4=IntVar()
+cb5=IntVar()
+
+genlbl=tkinter.Label(window,text="Tick Courses:")
+genlbl.place(x=200,y=100)
+
+c=tkinter.Checkbutton(window,text="C",var=cb1)
+c.place(x=200,y=200)
+cpp=tkinter.Checkbutton(window,text="C++",var=cb2)
+cpp.place(x=200,y=250)
+j=tkinter.Checkbutton(window,text="JAVA",var=cb3)
+j.place(x=200,y=300)
+p=tkinter.Checkbutton(window,text="python",var=cb4)
+p.place(x=200,y=350)
+n=tkinter.Checkbutton(window,text="None of these Above",var=cb5,command=test)
+n.place(x=200,y=400)
+
+resbut=tkinter.Button(window,text="show selected course:",command=show)
+resbut.place(x=200,y=450)
+window.mainloop()
+
 combobox
 ===========
 import tkinter
@@ -87,6 +169,31 @@ but=tkinter.Button(win,text="show month",command=dis)
 but.place(x=100,y=400)
 win.mainloop()
 ==============================
+image:
+	.../scripts>pip install pillow
+from PIL import Image,ImageTk
+import tkinter
+win=tkinter.Tk()
+wi=win.winfo_screenwidth()
+he=win.winfo_screenheight()
+win.configure(width=wi,height=he,bg="blue")
+
+myimg=Image.open("d:/images/gowtham.jpg")
+img=ImageTk.PhotoImage(myimg)
+
+myimg1=Image.open("d:/images/gowtham2.jpg")
+img1=ImageTk.PhotoImage(myimg1)
+
+imglbl=tkinter.Label(text="image",image=img)
+imglbl.place(x=100,y=100)
+
+imglbl1=tkinter.Label(text="image",image=img1)
+imglbl1.place(x=700,y=100)
+
+win.mainloop()
+
+
+
 link file
 -------------
 import os
