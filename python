@@ -31,6 +31,7 @@
 - Reference Types -Closure, Decorators.
 - Thread-Multithread.
 - Graphical User Interface-Entry,Text,Password,Listbox,Button,Messagebox,Radiobutton,CheckButton,ShowImage
+- combobox(use ttk)
 - Database Connectivity-Mysql, Create table, Insert table, View the table.
 - Tkinter project (GUI application)
 ---------------------------------
@@ -40,3 +41,49 @@ k=[11,12,34,-12,13,18,-21,44,32,-31]
 test=list(map(lambda var:var+10,k))
 print(test)
 ================================
+combobox
+===========
+import tkinter
+from tkinter import ttk,messagebox
+win=tkinter.Tk()
+win.configure(width="700",height="600",bg="yellow")
+win.title("first page")
+weekday=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+def dis():
+    messagebox.showinfo("selected day:",mycombo.get())
+
+mycombo=ttk.Combobox(win,values=weekday)
+mycombo.place(x=100,y=100)
+
+but=tkinter.Button(win,text="clickme",command=dis)
+but.place(x=100, y=400)
+win.mainloop()
+====================================
+listbox - disabled active(enabled)
+====================================
+from tkinter import messagebox
+import tkinter
+win=tkinter.Tk()
+wi=win.winfo_screenwidth()
+he=win.winfo_screenheight()
+win.configure(width=wi,height=he,bg="green")
+mon=["january","february","march","april","may","june","july","august","september","october","november","december"]
+
+def dis():
+    m=lb.curselection()
+    #print(m)
+    messagebox.showinfo("answer:",mon[m[0]])
+    
+lbl=tkinter.Label(win,text="select month")
+lbl.place(x=100,y=100)
+
+lb=tkinter.Listbox(win)
+for m in mon:
+    lb.insert("end",m)
+lb.place(x=100,y=150)
+
+but=tkinter.Button(win,text="show month",command=dis)
+but.place(x=100,y=400)
+win.mainloop()
+
+
