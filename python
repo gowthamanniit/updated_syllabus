@@ -32,6 +32,7 @@
 - Thread-Multithread.
 - Graphical User Interface-Entry,Text,Password,Listbox,Button,Messagebox,Radiobutton,CheckButton,ShowImage
 - combobox(use ttk)
+- connection b/w two files
 - Database Connectivity-Mysql, Create table, Insert table, View the table.
 - Tkinter project (GUI application)
 ---------------------------------
@@ -84,6 +85,24 @@ lb.place(x=100,y=150)
 
 but=tkinter.Button(win,text="show month",command=dis)
 but.place(x=100,y=400)
+win.mainloop()
+==============================
+link file
+-------------
+import os
+import tkinter
+from tkinter import ttk,messagebox
+win=tkinter.Tk()
+win.configure(width="700",height="600",bg="yellow")
+win.title("connection 2 files")
+
+def dis():
+    #messagebox.showinfo("selected day:",mycombo.get())
+    win.destroy()
+    os.startfile("gui5_listbox.py")
+
+but=tkinter.Button(win,text="clickme",command=dis)
+but.place(x=100, y=400)
 win.mainloop()
 
 
