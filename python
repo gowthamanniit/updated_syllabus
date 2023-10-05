@@ -104,5 +104,17 @@ def dis():
 but=tkinter.Button(win,text="clickme",command=dis)
 but.place(x=100, y=400)
 win.mainloop()
+=======================================
+mysql download and install
 
+google:download mysql workbench 8
+===================================
+https://dev.mysql.com/downloads/workbench/
+46.4 mb 
+
+google: mysql community server download
+=======================================
+https://dev.mysql.com/downloads/mysql/
+149.6 mb
+==========================================
 
