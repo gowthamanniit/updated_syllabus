@@ -25,12 +25,14 @@
 - Files-Different types of files-File operation.
 - Errors and Exceptions Handling-Errors. Assert, Try, except, Finally
 - Exceptions Try, Finally, User defined exception.
-- Object Oriented Programming-Class, Object,user defined function(object return),constructor,destructor,Inheritance, and Polymorphism.
+- Object Oriented Programming-Class, Object,user defined function(object return),
+constructor,destructor,Inheritance, and Polymorphism.
 -- access specifier
 - Reference Types- Iterator, Generator.
 - Reference Types -Closure, Decorators.
 - Thread-Multithread.
-- Graphical User Interface-Entry,Text,Password,Listbox,Button,Messagebox,Radiobutton,CheckButton,ShowImage
+- Graphical User Interface-Entry,Text,Password,Listbox,Button,Messagebox,
+Radiobutton,CheckButton,ShowImage
 - combobox(use ttk)
 - connection b/w two files
 - Database Connectivity-Mysql, Create table, Insert table, View the table.
