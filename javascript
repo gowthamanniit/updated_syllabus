@@ -100,3 +100,14 @@ let p=document.getElementById("pass").value;
 <div id="res"></div>
 </body>
 </html>
+======================================= js date==============
+		var d=new Date();
+		document.getElementById("res1").innerHTML="Current Date and Time:"+d;
+		document.getElementById("res2").innerHTML="Current Month:"+(d.getMonth()+1);
+		document.getElementById("res3").innerHTML="Current Year:"+d.getFullYear();
+		
+		document.getElementById("res4").innerHTML="Current Time:"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+
+document.getElementById("res5").innerHTML="Current Date:"+d.getDate();
+document.getElementById("res6").innerHTML="weekday:"+d.getDay();
+
