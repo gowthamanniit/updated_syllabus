@@ -7,7 +7,7 @@
  - operators
  - display output (DOM- write,innerHTML)
  - conversion str to int, str to float
- - String inbuilt functions(length,upper,lower,charAt,trim,replace,replaceAll,substring)
+ - String inbuilt functions(length,upper,lower,charAt,trim,replace,replaceAll,substring,includes)
  - popup(alert , confirm , prompt)
  - control statements (if, if else,if elseif, nestedif)
  - switch statements
