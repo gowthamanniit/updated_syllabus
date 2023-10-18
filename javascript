@@ -187,4 +187,5 @@ document.write("<br>"+Math.PI);
 		document.write("<br>"+Math.exp(10));
 		document.write("<br>"+Math.log(10));
 		document.write("<br>"+Math.abs(-10));
+		document.write("<br>"+Math.trunc(Math.random()*100));
 
