@@ -100,6 +100,54 @@ let p=document.getElementById("pass").value;
 <div id="res"></div>
 </body>
 </html>
+===================list box advanced================
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		function show()
+		{
+			var allitem=document.getElementById("weekday");			
+  		         allitem.remove(allitem.selectedIndex);		
+  		    
+
+  		    //select data
+  		    var len=allitem.options.length;
+  		    //alert(len);
+  		    for(var i=0;i<len;i++)
+  		    {
+  		    	if(allitem.options[i].selected==true)
+  		    		alert(allitem.options[i].value+"-->selected");
+  		    	else
+  		    		alert(allitem.options[i].value+"--> not selected ");
+  		    }
+
+
+
+		}
+	</script>
+</head>
+<body>
+	<form>
+	<select size="7" multiple id="weekday">
+		<option>Sunday</option>
+		<option>Monday</option>
+		<option>Tuesday</option>
+		<option>Wednesday</option>
+		<option>Thursday</option>
+		<option>Friday</option>
+		<option>Saturday</option>
+	</select>
+<br>
+<input type="button" onclick="show()" value="Remove Selected Item">
+<br>
+</form>
+
+</body>
+</html>
+
 ======================================= js date==============
 		var d=new Date();
 		document.getElementById("res1").innerHTML="Current Date and Time:"+d;
