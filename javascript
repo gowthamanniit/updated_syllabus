@@ -147,7 +147,17 @@ let p=document.getElementById("pass").value;
 
 </body>
 </html>
-
+===============================listbox---------------
+function deleteSelect(listid) {  
+var listb = document.getElementById(listid);  
+var len = listb.options.length;  
+for (var i = listb.options.length-1 ; i >= 0 ; i--) {  
+if (listb.options[i].selected == true) {  
+listb.options.remove(i);  
+}  
+}  
+}  
+</script>
 ======================================= js date==============
 		var d=new Date();
 		document.getElementById("res1").innerHTML="Current Date and Time:"+d;
