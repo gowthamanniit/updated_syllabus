@@ -169,4 +169,22 @@ listb.options.remove(i);
 
 document.getElementById("res5").innerHTML="Current Date:"+d.getDate();
 document.getElementById("res6").innerHTML="weekday:"+d.getDay();
+============================================math function================
+document.write("<br>"+Math.PI);
+		document.write("<br>"+Math.pow(3,3));
+		document.write("<br>"+Math.sqrt(81));
+		document.write("<br>"+Math.ceil(12.10));
+		document.write("<br>"+Math.floor(12.99));
+		document.write("<br>"+Math.log(10));
+		document.write("<br>"+Math.sin(0));
+		document.write("<br>"+Math.cos(0));
+		document.write("<br>"+Math.tan(0));
+		document.write("<br>"+Math.trunc(12.2342));
+		document.write("<br>"+Math.trunc(12.9342));
+		document.write("<br>"+Math.round(12.44));
+		document.write("<br>"+Math.round(12.54));
+		document.write("<br>"+Math.exp(0));
+		document.write("<br>"+Math.exp(10));
+		document.write("<br>"+Math.log(10));
+		document.write("<br>"+Math.abs(-10));
 
