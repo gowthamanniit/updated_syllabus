@@ -5,6 +5,7 @@
 - fadeIn,fadeOut,fadeToggle
 - hide, show , empty
 - animate, stop
+- innerHTML
 - css
 - events: 
   1) click       -- only left click once
@@ -18,7 +19,7 @@
 	9) blur	       -- cursor loses the textbox
 	10) on         -- apply all event methods
 - get value, set value
-- callback  
+- callback function
 
 
 ========================================================
