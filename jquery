@@ -17,7 +17,8 @@
 	7) hover       -- mousedown + mouseup
 	8) focus       -- cursor enter the textbox	
 	9) blur	       -- cursor loses the textbox
-	10) on         -- apply all event methods
+	10) change     -- change value in textbox
+	11) on         -- apply all event methods
 - get value, set value
 - callback function
 
