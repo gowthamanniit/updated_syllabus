@@ -189,3 +189,64 @@ document.write("<br>"+Math.PI);
 		document.write("<br>"+Math.abs(-10));
 		document.write("<br>"+Math.trunc(Math.random()*100));
 
+//======================listbox insert / remove =============
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var k=0;
+		function show()
+		{
+			var ans="";			
+		//	var all=document.getElementsByTagName("option");
+			var all=document.getElementById("lb1");
+			alert(all.length);
+			for(var i=0;i<all.length;i++)
+			{
+				//alert(all[i].value);
+				//alert(all[i].selected);
+				if(all[i].selected==true)
+				{
+					ans=all[i].value;							
+				}
+
+
+			}
+			
+			document.getElementById("res").innerHTML=ans;
+			if(ans!="")
+			document.form1.lb2.options[k++]=new Option(ans,ans);
+				else
+					alert("pls select any one item");
+
+
+			//remove
+			var allitem=document.getElementById("lb1");			
+  		    allitem.remove(allitem.selectedIndex);		
+  		    
+		}
+	</script>
+</head>
+<body>
+	<form name="form1">
+	<select size="7" id="lb1">
+		<option>Sunday</option>
+		<option>Monday</option>
+		<option>Tuesday</option>
+		<option>Wednesday</option>
+		<option>Thursday</option>
+		<option>Friday</option>
+		<option>Saturday</option>
+	</select>
+		<select name="lb2" multiple>
+		<option value="empty"></option>		
+	</select>
+<br>
+<input type="button" onclick="show()" value="find selected length">
+<br>
+</form>
+<div id="res"></div>
+</body>
+</html>
+
