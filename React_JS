@@ -6,7 +6,7 @@ one Top level element - grouping
 how to use expression? - {}
 how to change React Default App name?
 React Es-6 - 1. Arrow Function 2. var/let/const 3. Destructing 4. Array methods Map (loop) 
-             5. Destructing 6. spread operator 7. Ternary operator 8 .modules(export and import)
+             5. spread operator 6. Ternary operator 7 .modules(export and import)
 React render - 2 ways
 React JSX
 React Components - Advanced
