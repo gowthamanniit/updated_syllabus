@@ -20,3 +20,27 @@ React Life cyle components
 HTTP and React
 React Hooks
 Integration with other libraries
+
+
+
+================expression + control statements in react ==========
+function App()
+{
+  var m1=100
+  var m2=99
+  var m3=35
+  var m4=101
+  var m5=100
+  return(
+    <>
+      <h1>{(m1>34 && m2>34 && m3>34 && m4>34 && m5>34 && "PASS") || "FAIL"}</h1>      
+    </>
+  )
+}
+export default App
+
+<h2>{a>b && "a is greater"}</h2>
+<h2>{b>a && "b is greater"}</h2>
+<h2>{a>b && a+" is greater"}</h2>
+<h2>{b>a && b+" is greater"}</h2>
+===========================================================================
