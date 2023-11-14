@@ -8,6 +8,7 @@ how to use control statements in react ?
 how to change React Default App name?
 React Es-6 - 1. Arrow Function 2. var/let/const 3. Destructing 4. Array methods Map (loop) 
              5. spread operator 6. Ternary operator 7 .modules(export and import)
+React JSON : basic, nested json, json with array,array with json
 React render - 2 ways
 React JSX
 React Components - Advanced
@@ -33,7 +34,10 @@ function App()
   var m5=100
   return(
     <>
-      <h1>{(m1>34 && m2>34 && m3>34 && m4>34 && m5>34 && "PASS") || "FAIL"}</h1>      
+      <h1>{(m1>34 && m2>34 && m3>34 && m4>34 && m5>34 && "PASS") || "FAIL"}</h1>  
+
+      <h2>{(m1>34 && m2>34 && m3>34 && m4>34 && m5>34) && "PASS"}</h2>
+      <h2>{(m1<=34 || m2<=34 || m3<=34 || m4<=34 || m5<=34) && "FAIL"}</h2>
     </>
   )
 }
