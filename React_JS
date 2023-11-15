@@ -67,4 +67,8 @@ function Gowtham()
   )
 }
 export default Gowtham
-=======================================================================
+====================var vs let vs const===================================
+var -------> global
+let,const---->local
+var,let--->change
+const------>does not change
