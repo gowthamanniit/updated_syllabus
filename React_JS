@@ -47,4 +47,24 @@ export default App
 <h2>{b>a && "b is greater"}</h2>
 <h2>{a>b && a+" is greater"}</h2>
 <h2>{b>a && b+" is greater"}</h2>
-===========================================================================
+===========================Arrow Function + argument or parameter passing=====
+function Gowtham()
+{
+  var disp = () =>{
+      document.getElementById("res").innerHTML="Button Clicked:"
+  }
+  var disp1 = (a,b) =>{
+      document.getElementById("res").innerHTML="Button Clicked Total:"+(a+b)
+  }
+
+  return(
+    <>
+      
+      <button onClick={disp}>click me</button>
+      <button onClick={()=>disp1(11,22)}>click me</button>
+      <div id="res"></div>    
+      </>
+  )
+}
+export default Gowtham
+=======================================================================
