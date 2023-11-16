@@ -6,8 +6,15 @@ one Top level element - grouping
 how to use expression? - {}
 how to use control statements in react ?
 how to change React Default App name?
-React Es-6 - 1. Arrow Function 2. var/let/const 3. Destructing 4. Array methods Map (loop) 
-             5. spread operator 6. Ternary operator 7 .modules(export and import)
+React Array(basic)
+React JSON : basic, nested json, json with array,array with json
+React Es-6 -1. Arrow Function (without parameter,with parameter)
+            2. var/let/const 
+            3. Destructing (array,function,object,nested object)
+            4. Array methods Map (loop) 
+            5. spread operator 
+            6. Ternary operator 
+            7. modules(export and import)
 React JSON : basic, nested json, json with array,array with json
 React render - 2 ways
 React JSX
@@ -72,3 +79,87 @@ var -------> global
 let,const---->local
 var,let--->change
 const------>does not change
+==================== destructing=========================================
+function Gowtham()
+{
+  let arithmetic=(a,b)=>{
+    const myadd=a+b
+    const mysub=a-b
+    const mymul=a*b
+    const mydiv=a/b
+    return [myadd,mysub,mymul,mydiv]
+
+  }
+  var arr=[11,22,33,44,55]
+  var [v1,v2,,v4,v5]=arr
+  var [add,sub,mul,div]=arithmetic(11,22)
+
+  var stud={
+        rno:1001,
+        sname:"abimanyu",
+        mark1:99,
+        mark2:45,
+        mark3:24
+  }
+  var emp={
+    eno:1009,
+    ename:"ajith",
+    roll:{
+        roll1:'superwising',
+        roll2:'checking',
+        roll3:'maintance',
+        roll4:'packing'
+    }
+  }
+//new model object destructiog
+  
+  function disp({rno,sname,mark1,mark2,mark3})
+  {
+    var res="My roll number:"+rno+"<br>My Name:"+sname+"<br>Mark1:"+mark1+"<br>Mark2"+mark2+"<br>Mark3:"+mark3
+    document.getElementById("ans").innerHTML=res
+  }
+
+  // new model nested object destructing 
+
+  function show({eno,ename,roll:{roll1,roll2,roll3,roll4}})
+  {
+    var res=eno+"<br>"+ename+"<br>"+roll1+"<br>"+roll2+"<br>"+roll3+"<br>"+roll4
+    document.getElementById("ans2").innerHTML=res
+  }
+  
+  
+  return(
+    <>
+    <h2>Destructiong old model</h2>
+      <h1>Value:1 {arr[0]}</h1>
+      <h1>Value:2 {arr[1]}</h1>
+      <h1>Value:3 {arr[2]}</h1>
+      <h1>Value:4 {arr[3]}</h1>
+      <h1>Value:5 {arr[4]}</h1>
+      <h2>New way destructing</h2>
+      <h1>value1:{v1}</h1>
+      <h1>value2:{v2}</h1>
+      <h1>value3:{v4}</h1>      
+      <h1>value5:{v5}</h1>
+      <h2>Destructing with function</h2>
+      <h2>Addition:{add}</h2>
+      <h2>Subtracttion:{sub}</h2>
+      <h2>Multiplication:{mul}</h2>
+      <h2>Division:{div}</h2>
+      
+      <h2>Destructing object old model</h2>
+      <h3>Roll Number:{stud.rno}</h3>
+      <h3>Student Name:{stud.sname}</h3>
+      <h3>Student Mark1:{stud.mark1}</h3>
+      <h3>Student Mark2:{stud.mark2}</h3>
+      <h3>Student mark3:{stud.mark3}</h3>
+      <h2>Destructing object new model</h2>
+      <button onClick={()=>disp(stud)}>clickme</button>
+      <button onClick={()=>show(emp)}>clickme</button>
+      <div id="ans"></div>
+      <div id="ans2"></div>
+          </>
+  )
+}
+export default Gowtham
+===========================================================================
