@@ -161,4 +161,37 @@ function Gowtham()
   )
 }
 export default Gowtham
-===========================================================================
+=================================Map method + how to use inline css basic================================
+function Gowtham()
+{
+  var arr=[11,22,233,44,66,99,112]
+  var max=arr[0]
+  var sum=0
+  return(
+    <>
+        <center>
+          <h2>React Loop - Map method</h2>
+          </center>
+          <ol>{arr.map((item)=><li>{item}</li>)}</ol>
+          
+           <div style={{display:"none"}}>
+            {/* {arr.map((item)=><> {item>max && <>{max=item}</>} </>)} */}
+            {arr.map((item)=> item>max && <>{max=item}</>)}
+            </div>
+          
+            <div style={{display:"none"}}>
+            {arr.map((item)=>sum=sum+item)}
+            </div>
+          
+            <h1>Max value:{max}</h1>
+             <h1>Sum Value:{sum}</h1>
+
+            <h2>Display Even Numbers:</h2>
+
+            {arr.map((item)=>item%2===0 && item+" ")}
+        
+    </>
+  )
+}
+export default Gowtham
+
