@@ -195,4 +195,78 @@ function Gowtham()
   )
 }
 export default Gowtham
+================================== spread operator ... ============
+===================================ternary operator=================
+==================================module export import==============
+modules:
+=======
+def: break up your code into separate files
+use: easy to understand
 
+moudles types:
+	1) named (use: variables export and import)
+		
+		--> in-line individually (multple exports)
+			ex:
+			mod1.js	
+			export const variablename1=value1		
+			export const variablename2=value1		
+			App.js
+			import { variablename1 } from './mod1'
+			import { variablename2 } from './mod1'
+		--> all at once at bottom
+			meaning : only one export
+			mod2.js
+			const var1=value1
+			const var2=value2
+			const var3=value3
+			export {var1,var2,var3}		
+			App.js
+			import {var1,var2,var3} from './mod2'
+	2) default (ex: component export and import - only one export)		
+		create one folder inside src
+		create one component either class or function
+		export componet
+			ex:
+			function Vimal()
+			{
+			return(
+			.......
+			)
+			}
+			export default Vimal
+		app.js
+			import Vimal from './component/filename'
+
+			<vimal/>
+============images export import==========================================
+ex: D:\notes\abireact\myapp\src\components
+commonvar.js
+
+export var accno=1143155000137984
+export var ifsc="KVL0001143"
+export var aadhar=858415764043
+export var myimg2=require("../images/hd2.jpg")  //double dot must
+
+
+App.js
+=======
+import { aadhar, accno, ifsc } from "./components/CommonVar"
+import myimg1 from "./images/hd4.jpg"--------------------> only import images
+import { myimg2 } from "./components/CommonVar" -------------> export and import images
+
+function Gowtham()
+{
+  return(
+      <>
+        <h1>MyAadhar:{aadhar}</h1>      
+        <h1>Myaccount:{accno}</h1> 
+        <h1>IFSC code:{ifsc}</h1>           
+        <img src={myimg1} alt="path not found"></img>
+        <img src={myimg2} alt="path not found"></img>
+
+      </>
+  )
+}
+export default Gowtham
+===================================================================
