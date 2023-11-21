@@ -15,6 +15,7 @@ React Es-6 -1. Arrow Function (without parameter,with parameter)
             5. spread operator 
             6. Ternary operator 
             7. modules(export and import)
+            7.1 export using image,without export image
 React render - 2 ways
 React JSX
 React Components - Advanced
