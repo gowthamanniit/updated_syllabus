@@ -18,10 +18,9 @@ React Es-6 -1. Arrow Function (without parameter,with parameter)
             7.1 export & import images,without export image/only import
 React render - 2 ways
 React JSX
-React Components - Advanced
-React State (state could only be used in class components)
-React props (Argument passing)
 React Styling and css
+React props (Argument passing)
+React State (state could only be used in class components)
 React Forms
 React Event Handler
 React Life cyle components
