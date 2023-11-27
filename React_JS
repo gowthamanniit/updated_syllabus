@@ -268,6 +268,40 @@ function Gowtham()
   )
 }
 export default Gowtham
+==================react render 2 ways==================
+React Render HTML
+==================
+
+React's goal is in many ways to render HTML in a web page.
+React renders HTML to the web page by using a function called ReactDOM.render().
+
+The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
+
+But render where?
+
+There is another folder in the root directory of your React project, named "public". In this folder, there is an index.html file.
+
+You'll notice a single <div> in the body of this file. This is where our React application will be rendered.
+
+way 1:
+======
+header file:
+	import ReactDOM from 'react-dom/client'
+
+ex:
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>
+);
+
+way:2
+======
+header file:
+	import ReactDOM from 'react-dom'
+	ReactDOM.render(<App/>,document.getElementById("root"))
 ==============react jsx & all notes revision=======================
 React JSX:
 
