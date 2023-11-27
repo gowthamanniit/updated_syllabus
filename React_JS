@@ -268,4 +268,104 @@ function Gowtham()
   )
 }
 export default Gowtham
-===================================================================
+==============react jsx & all notes revision=======================
+React JSX:
+
+Javascript and XML:
+
+purpose: allow to write html code
+
+
+1)how to use single tag:
+	ex:
+	var data=<h1>..........</h1>
+
+2)large block of html tag
+   - must know about "one top level element"
+			<>
+			..........
+			</>
+	ex:
+	var data=(
+			<>  or div or span
+			..............
+			</>
+		)
+	impot {ReactDom} from 'react-dom'
+	ReactDOM.render(data,document.getElementById("root"))
+
+3) expression: {calculation or path or call function}
+
+
+	call function : don't use () when no arguments
+
+	ex:
+	<img src={path}/>
+	<button onClick={show}/>
+	<button onClick={()=>show(value1,value2)}
+	{a+b/c}
+4) attribute name className instead of class
+	use: CSS style
+	<h1 className="yourclassname">...........</h1>
+
+	index.css
+		.yourclassname
+		{
+		property:value;
+		.........
+		}
+5) element Must be closed
+	<></>
+	<br></br>
+	<br/>
+6) don't use double quotes
+7) if you want to assign: <>{sum=100}</>
+8) control statements
+	{(condition1 && condition2 && ..."final") || "esle state"}
+
+	{arr.map((item)=>item)}
+	<ol>{arr.map((item)=><li>{item}</li>)}</ol>
+
+9) ternary operator
+	exp1? exp2  : exp3
+
+	{isvaliduser===true ? <Valid/> : <Invalid/>}
+
+=================================React styling and css===================
+Styling and CSS:
+==================
+2 types:
+	1 ) inline
+		ex:
+    <h1 style={{property:"value",property:"value"}}>	............... </h1>
+
+	note:
+	- don't use semicolon(;) when apply multi property
+	- only use comma(,)
+	- value must be double quotes key:"value"
+	- property is case senstive 
+	 ex:
+		backgroundColor-->C caps		
+		fontSize-->S caps
+		
+	2 ) external
+
+	create one folder --> right click on src folder
+			  --> new folder
+			  --> right click on folder
+			  --> new file
+				  --> filename.css
+
+	App.js or any js file
+	======================
+	note:
+		don't use from
+		don't export only import
+		extension must filename.css	
+	ex:
+		import "./foldername/filename.css"
+		import "../foldername/filename.css"
+
+	. -> current file's folder
+	.. -> current file's pervious folder
+=================
