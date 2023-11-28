@@ -496,4 +496,29 @@ class Gowtham extends React.Component
   }
 }
 export default Gowtham
+--------------App.js -- props using function components
+function Gowtham(props)
+{
+  return(
+    <>
+    <center>
+      
+    <h1>Student Roll Number:{props.mydata.rno}</h1>
+    <h1>Student Name       :{props.mydata.sname}</h1>
+    <h1>Student Mark       :{props.mydata.mark}</h1>    
 
+    </center>
+    </>
+  )
+}
+export default Gowtham
+
+index.js
+========
+
+var stud={
+  rno:1002,
+  sname:"narmatha",
+  mark:19
+}
+ReactDOM.render(<Gowtham mydata={stud}></Gowtham>,document.getElementById("root"))
