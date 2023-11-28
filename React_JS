@@ -21,6 +21,7 @@ React JSX
 React Styling and css
 React props (Argument passing)
 React State (state could only be used in class components)
+Combine React state and props
 React Forms
 React Event Handler
 React Life cyle components
@@ -402,4 +403,94 @@ Styling and CSS:
 
 	. -> current file's folder
 	.. -> current file's pervious folder
-=================
+=================React state (only works on class comp)=======================
+React State:
+=============
+
+it is used to store json.
+
+note:
+	we can use only class components
+
+syntax:
+	import React from "react"
+	class classname extends React.Component
+	{
+		constructor(props)
+		{
+			super()		
+			this.state={
+				key1:value,
+				key2:[val1,val2,val3,..],
+				key3:{key1:val1,key2:val2,..},
+				key4:value
+				}
+		}
+		render()
+		{
+			return(
+			<>
+				{this.state.key1}
+
+			</>
+			)
+		}
+	}
+	export default classname
+
+react state + props:
+====================
+
+props: argument passing from index.js file
+
+state: to store props value using json
+
+
+index.js:
+	<App rno="1001" sname="gowthaman"/>
+
+App.js:
+	constructor(props)
+	{
+		super(props)
+		this.state={
+				myrno=this.props.rno
+				sname=this.props.sname
+		}
+
+	}
+	render()
+	{
+	return(
+		<>
+		<h1>{this.state.myrno}</h1>
+		</>
+	)
+	}
+ex:
+import React from "react";
+class Gowtham extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+    this.state={rno:this.props.rno,
+              sname:this.props.sname,
+              mark:this.props.mark
+            }
+  }
+  render()
+  {
+    return(
+        <>
+        <h1>React State</h1>
+        <h2>Roll number:{this.state.rno}</h2>
+        <h2>Sname:{this.state.sname}</h2>
+        <h2>Mark 1:{this.state.mark}</h2>
+        
+        </>
+    )
+  }
+}
+export default Gowtham
+
