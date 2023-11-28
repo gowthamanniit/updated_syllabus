@@ -522,3 +522,5 @@ var stud={
   mark:19
 }
 ReactDOM.render(<Gowtham mydata={stud}></Gowtham>,document.getElementById("root"))
+
+
