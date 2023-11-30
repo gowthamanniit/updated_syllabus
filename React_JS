@@ -19,6 +19,8 @@ React Es-6 -1. Arrow Function (without parameter,with parameter)
 React render - 2 ways
 React JSX
 React Styling and css
+i)inline
+ii)external
 React props (Argument passing)
 i) basic (individual attributes)
 ii) passing argument as object normal
