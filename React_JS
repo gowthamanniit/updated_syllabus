@@ -577,4 +577,40 @@ function Gowtham(props)
   )
 }
 export default Gowtham
-
+====================== props + json + for in + class + table result + sum==========
+import React from 'react'
+class Gowtham extends React.Component
+{
+  constructor(props)
+  {
+    super()
+  }
+  render()
+  {
+    var fres=[]
+    var i=0,tot=0
+    for(var k in this.props.mydata)
+    {
+      //console.log(k,"=============>",props.mydata[k])
+      tot=tot+this.props.mydata[k]
+      fres[i++]=<tr><td>{k}</td><td align='right'>{this.props.mydata[k]}</td></tr>
+    }
+    return(
+        <>
+    <h2>=======class components old model=====================</h2>
+    <h1>Tamil Mark       :{this.props.mydata.tamil}</h1>    
+    <h1>English Mark       :{this.props.mydata.english}</h1>    
+    <h1>Maths Mark       :{this.props.mydata["maths"]}</h1>    
+    <h1>Science Mark       :{this.props.mydata.science}</h1>    
+    <h1>Social Mark       :{this.props.mydata.social}</h1>    
+    <h2>=======class components new model=====================</h2>
+    <table border="2">
+    <tr><th>Subjects</th><th>Marks</th></tr>  
+    {fres.map((item)=><>{item}</>)}    
+    <tr><th>Total Marks:</th><th align='right'>{tot}</th></tr>
+    </table>
+        </>        
+    )
+  }
+}
+export default Gowtham
