@@ -550,4 +550,31 @@ class Gowtham extends React.Component
   }
 }
 export default Gowtham
+=======================props + json + for in + map ================
+function Gowtham(props)
+{
+
+  var fres=[]
+  var i=0
+  for(var k in props.mydata)
+  {
+    //console.log(k,"=============>",props.mydata[k])
+    fres[i++]=<>{k}:{props.mydata[k]}</>
+  }
+  return(
+    <>
+    <center>
+    <h2>================old method============</h2>
+    <h1>Tamil Mark       :{props.mydata.tamil}</h1>    
+    <h1>English Mark       :{props.mydata.english}</h1>    
+    <h1>Maths Mark       :{props.mydata["maths"]}</h1>    
+    <h1>Science Mark       :{props.mydata.science}</h1>    
+    <h1>Social Mark       :{props.mydata.social}</h1>     
+    </center>
+    <h2>================new method============</h2>
+    <ol>{fres.map((item)=><li>{item}</li>)}</ol>    
+    </>
+  )
+}
+export default Gowtham
 
