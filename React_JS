@@ -23,6 +23,7 @@ React props (Argument passing)
 i) basic (individual attributes)
 ii) passing argument as object normal
 iii) passing argument as object nested
+iv) passing argument using class constructor
 React State (state could only be used in class components)
 Combine React state and props
 React Forms
@@ -522,5 +523,31 @@ var stud={
   mark:19
 }
 ReactDOM.render(<Gowtham mydata={stud}></Gowtham>,document.getElementById("root"))
+================ props - arg passing using class components=============
 
+import React from 'react'
+class Gowtham extends React.Component
+{
+  constructor(props)
+  {
+    super()
+  }
+  render()
+  {
+    return(
+        <>
+            <h1>This is class Components</h1>
+    <h1>Student Roll Number:{this.props.mydata.rno}</h1>
+    <h1>Student Name       :{this.props.mydata.sname}</h1>
+    <h1>Tamil Mark       :{this.props.mydata.marks.tamil}</h1>    
+    <h1>English Mark       :{this.props.mydata.marks.english}</h1>    
+    <h1>Maths Mark       :{this.props.mydata.marks["maths"]}</h1>    
+    <h1>Science Mark       :{this.props.mydata.marks.science}</h1>    
+    <h1>Social Mark       :{this.props.mydata.marks.social}</h1>    
+
+        </>
+    )
+  }
+}
+export default Gowtham
 
