@@ -28,8 +28,16 @@ iii) passing argument as object nested
 iv) passing argument using class constructor
 React State (state could only be used in class components)
 Combine React state and props
-React Forms
-React Event Handler
+React Forms:
+============
+-text,number,password,label,radio,checkbox,textarea,
+select option,email,date,time,week,file,range,
+hidden,button,submit,reset.
+
+React Event Handler / Handling events
+-onClick, onChange, onFocus, onBlur, onSubmit(only press submit button)
+
+
 React Life cyle components
 HTTP and React (AXIOS)
 React Hooks
