@@ -36,11 +36,14 @@ hidden,button,submit,reset.
 
 React Event Handler / Handling events
 -onClick, onChange, onFocus, onBlur, onSubmit(only press submit button)
+-event.preventDefault() (only <input type=submit>,<button>)
+-event.target.value, event.target.id, event.target.name
 
 
-React Life cyle components
+React Life cyle components --> only class components
+React Hooks --> only function components
+
 HTTP and React (AXIOS)
-React Hooks
 Integration with other libraries
 
 
