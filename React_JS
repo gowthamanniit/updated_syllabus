@@ -38,12 +38,16 @@ React Event Handler / Handling events
 -onClick, onChange, onFocus, onBlur, onSubmit(only press submit button)
 -event.preventDefault() (only <input type=submit>,<button>)
 -event.target.value, event.target.id, event.target.name
+-event.target.tagName, event.target.type
 
+value attribute in textfield issue (because return is always running)
 
-React Life cyle components --> only class components
 React Hooks --> only function components
 
+React Life cyle components --> only class components
+
 HTTP and React (AXIOS)
+
 Integration with other libraries
 
 
