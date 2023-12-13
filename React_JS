@@ -43,6 +43,10 @@ React Event Handler / Handling events
 value attribute in textfield issue (because return is always running)
 
 React Hooks --> only function components
+	-useState
+	-useEffect
+	-
+	- ErrorHandling
 
 React Life cyle components --> only class components
 
