@@ -66,6 +66,37 @@ but1.place(x=800,y=300)
 reslbl=tkinter.Label(window,text=".......")
 reslbl.place(x=350,y=450)
 window.mainloop()
+---------------------
+radiobutton
+----------------------
+import tkinter
+from tkinter import *
+import os
+
+from tkinter import messagebox
+win=tkinter.Tk()
+win.title("gui window")
+w=win.winfo_screenwidth()
+h=win.winfo_screenheight()
+win.configure(width=w,height=h,bg="blue")
+
+tit=tkinter.Label(win,text="Student Appliation Form:",bg="yellow",fg="red",font=('arial bold italic',20))
+tit.place(x=100,y=100)
+
+genlbl=tkinter.Label(win,text="Select Gender:",font=("arial bold",18))
+genlbl.place(x=100,y=200)
+
+genvar=StringVar()
+genvar.set("female")
+male=tkinter.Radiobutton(win,text="Male",variable=genvar,value="male")
+male.place(x=300,y=200)
+female=tkinter.Radiobutton(win,text="FeMale",variable=genvar,value="female")
+female.place(x=400,y=200)
+others=tkinter.Radiobutton(win,text="Others",variable=genvar,value="others")
+others.place(x=500,y=200)
+
+win.mainloop()
+
 checkbutton with validation:
 --------------------------
 import tkinter
