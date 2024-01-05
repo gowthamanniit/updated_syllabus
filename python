@@ -31,8 +31,10 @@ constructor,destructor,Inheritance, and Polymorphism.
 - Reference Types- Iterator, Generator.
 - Reference Types -Closure, Decorators.
 - Thread-Multithread.
-- Graphical User Interface-Entry,Text,Password,Listbox,Button,Messagebox,
-Radiobutton,CheckButton,ShowImage
+- Graphical User Interface-Label,Entry,Text,Password,Listbox,
+Button,Messagebox,
+Radiobutton,CheckButton,
+ShowImage
 - combobox(use ttk)
 - connection b/w two files
 - Database Connectivity-Mysql, Create table, Insert table, View the table.
