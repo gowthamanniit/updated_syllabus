@@ -247,6 +247,47 @@ but=tkinter.Button(win,text="clickme",command=dis)
 but.place(x=100, y=400)
 win.mainloop()
 =======================================
+====list box multiple selection result and clear selected item==
+import tkinter
+from tkinter import messagebox
+win=tkinter.Tk()
+win.configure(width=win.winfo_screenwidth(),height=win.winfo_screenheight(),bg="cyan")
+def clearfun():
+    totsize=lb.size()
+    print(totsize)
+    lb.select_clear(0,totsize-1)
+def showfun():
+    res=lb.curselection()
+    ns=len(res)
+    #messagebox.showinfo("Number of selection:",ns)
+    ans=[]
+    for i in range(0,ns):
+        ans.append(mon[res[i]])
+    fans=",".join(ans)
+    if ns!=0:
+        messagebox.showinfo("selected month(s):", fans)
+    else:
+        messagebox.showerror("selected month(s):","You didn't select anything")
+    #print(res)
+    #print(mon[res[0]])
+    #messagebox.showinfo("selected month:",mon[res[0]])
+    
+
+mon=["january","february","march","april","may","june","july","august","september","october","november","december"]
+
+
+lb=tkinter.Listbox(win,selectmode="multiple")
+for i in range(len(mon)):
+    lb.insert("end",mon[i])
+lb.place(x=100,y=100)
+
+but=tkinter.Button(win,text="selected month",command=showfun)
+but.place(x=100,y=300)
+cbut=tkinter.Button(win,text="clear selected month",command=clearfun)
+cbut.place(x=300,y=300)
+win.mainloop()
+
+==================================
 mysql download and install
 
 google:download mysql workbench 8
