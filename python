@@ -247,7 +247,7 @@ but=tkinter.Button(win,text="clickme",command=dis)
 but.place(x=100, y=400)
 win.mainloop()
 =======================================
-====list box multiple selection result and clear selected item==
+====list box multiple selection result and clear/delete selected item ==
 import tkinter
 from tkinter import messagebox
 win=tkinter.Tk()
@@ -256,6 +256,13 @@ def clearfun():
     totsize=lb.size()
     print(totsize)
     lb.select_clear(0,totsize-1)
+def delfun():
+    res=lb.curselection()
+    ns=len(res)
+    for i in range(0,ns):
+        lb.delete(res[i])
+    if ns==0:
+        messagebox.showerror("selected month(s):","You didn't select anything")
 def showfun():
     res=lb.curselection()
     ns=len(res)
