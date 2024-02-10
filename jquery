@@ -6,7 +6,6 @@
 - hide, show , empty
 - animate, stop
 - innerHTML
-- get,set value in textbox (val())
 - css
 - events: 
   1) click       -- only left click once
