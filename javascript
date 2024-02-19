@@ -11,6 +11,7 @@
                  replace,replaceAll,substring,includes,startsWith,
 		endsWith)
  - mathematical inbuilt function
+	(Math.PI,pow,sqrt,ceil,floor,round,trunc,log,sin,con,tan,exp,abs,random)
  - popup(alert , confirm , prompt)
  - control statements (if, if else,if elseif, nestedif)
  - switch statements
