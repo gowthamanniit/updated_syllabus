@@ -518,6 +518,60 @@ class Gowtham extends React.Component
   }
 }
 export default Gowtham
+-----------react state + props using class components------------
+import React from 'react'
+class Gowtham extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+    this.state=this.props.mydata
+  }
+  render()
+  {
+    var arr=[]
+    var i=0,tot=0
+    for(var k in this.state.marks)
+    {
+      //console.log(k)
+      arr[i++]=<tr><td>{k}</td><td>{this.state.marks[k]}</td></tr>
+      tot=tot+this.state.marks[k]
+    }
+    return(
+      <>
+        <h2>Roll number:{this.state.rno}</h2>
+  ``      <h2>Name:{this.state.sname}</h2>
+        {/*         
+        <h2>Tamil:{this.state.tamil}</h2>
+        <h2>Englsih:{this.state.english}</h2>
+        <h2>Maths:{this.state.maths}</h2>
+        <h2>Science:{this.state.science}</h2>
+        <h2>Social:{this.state.social}</h2> */ /*}
+        <table border="3">
+          <tr><th>Subjects</th><th>Marks</th></tr>
+        {arr.map((item)=>item)}
+        <tr><th>Total:</th><th>{tot}</th></tr>
+        </table>    
+      </>
+    )
+  }
+}
+export default Gowtham
+
+index.js
+--------
+var stud=
+{rno:1001,
+  sname:"narmatha",
+  marks:{
+  tamil:33,
+  english:77,
+  maths:34,
+  science:77,
+  social:10
+  }
+}
+ReactDOM.render(<Gowtham mydata={stud}></Gowtham>,document.getElementById("root"))
 --------------App.js -- props using function components
 function Gowtham(props)
 {
