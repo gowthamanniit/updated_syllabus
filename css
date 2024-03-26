@@ -5,9 +5,10 @@ Nested Selector,(link - 1. link, 2.hover 3. active 4.visited)
 Property: value, background-color, border,border-radious,margins top,left,right,bottom,padding, opacity,
 Font- color,size,text transform,alignment,background image:url,width,height,rgb,rgba,
 Text decoration, background-repeat:  background-size: cover
-Line height,outline,cursor,z-index,
+Line height,outline,cursor,
+Position: static,absolute,fixed,relative,Sticky
+z-index
 Animations-animation name,keyframe,duration,dealy,iteration count,direction
-Position: static,absolute,fixed,relative
 Transform: translate,rotate,scale,skew
 Transition effect. Property,duration,delay,timing function:ease in,out,..
 Visibility: visible hidden,Display: none, inline,block,inline-block,Drop down list.
