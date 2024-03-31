@@ -12,6 +12,7 @@ Animations-animation name,keyframe,duration,dealy,iteration count,direction
 Transform: translate,rotate,scale,skew
 Transition effect. Property,duration,delay,timing function:ease in,out,..
 Visibility: visible hidden,Display: none, inline,block,inline-block,Drop down list.
+list style: list style position, list style image, list style type
 Box shadow, double color(linear,radial gradient), multilist(nested list), table-border collapse
 
 
