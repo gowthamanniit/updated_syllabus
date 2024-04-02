@@ -55,3 +55,51 @@ focus-within
 </body>
 </html>
 =============
+nested list
+=============
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		ol li ul
+		{
+			display: none;
+		}
+		ol li:hover ul
+		{
+			display: block;
+		}
+		ol
+		{
+			display: inline-block;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<ol>
+		<li>January</li>		
+		<li>February
+			<ul>
+				<li>sunday</li>
+				<li>monday</li>
+				<li>tuesday</li>							
+			</ul>
+		</li>		
+
+		<li>March</li>
+		<li>April</li>
+		<li>May
+				<ul>
+				<li>wednesday</li>
+				<li>thursday</li>
+				<li>friday</li>								
+				<li>Saturday</li>								
+			</ul></li>
+		<li>June</li>
+	</ol>
+</body>
+</html>
