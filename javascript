@@ -19,6 +19,7 @@
  - loop (for, while, do..while loop,nested loop)
  - jumping statements (1.continue,2.break)
  - Array (Array(""))
+ - Convert Str to CharArray and chararray to str
  - setTimout-function,window.open,window.location.href="path"-->overwrite page,this.close()
  - input from forms (radio,checkbox,select,window.document.bgColor="red";)
  - regular expression
