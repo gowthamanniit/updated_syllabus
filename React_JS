@@ -49,7 +49,9 @@ React Hooks --> only function components
 	-ErrorHandling
 
 React Life cyle components --> only class components
-
+	i) mount
+	ii) update
+	iii) unmount
 HTTP and React (AXIOS)
 
 Integration with other libraries
