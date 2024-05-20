@@ -50,8 +50,18 @@ React Hooks --> only function components
 
 React Life cyle components --> only class components
 	i) mount
+		- constructor
+		- componentDidMount
+		- render
 	ii) update
+		- constructor
+		- componentDidUpdate
+		- componentDidMount
+		- shouldComponentUpdate
+		- getSnapShotBeforeUpdate
+		- render
 	iii) unmount
+		-componentWillUnMount
 HTTP and React (AXIOS)
 
 Integration with other libraries
