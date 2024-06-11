@@ -1,0 +1,64 @@
+Node JS syllabus:(28 hours)
+=======================
+Getting started - Introduction
+Node Core
+REPL Terminal
+Callbacks Concepts
+Event Loop
+Event Emitter
+Buffers and Streams
+Web Modules
+Body-Parser
+Email-Validation
+Web Sockets
+Debugger
+Mongodb Node Modules
+Connectiong Node js to Database
+Payment Gateway
+SEO, DNS,HOST,SMTP Basics
+Real Time projects.
+
+	node js installation + first application
+	================================
+
+	step 1:
+		open vs code
+	step 2:	
+		file --> open folder
+		choose your folder or create new folder.
+
+	step 3:
+		select folder
+		open
+	step 4:
+		goto terminal
+	step 5:
+		set path your folder.
+
+	step 6:
+		> npm init
+
+		>npm install http
+	step 7:
+		> md pgmfolder
+		>cd pgmfolder
+	step 8:
+
+		create js file inside pgmfolder
+
+		ex: simple.js
+
+	step 9: type program
+
+	step 10: run program
+		goto terminal :
+
+		> node filename.js
+
+		don't close
+	step 11:
+		goto browser
+		http://127.0.0.1:yourportnumber
+	OR	
+		http://localhost:yourportnumber
+ 
