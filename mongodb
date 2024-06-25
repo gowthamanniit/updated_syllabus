@@ -6,6 +6,9 @@ Mongodb Drop Collections(delete)
 Mongodb Drop Database
 Mongodb Read Operations(select or view collection values)
 Mongodb Write Operations (insert)
+Mongodb Update command
+Mongodb Remove Row values
+Mongodb Projection
 Data Modeling
 Mongodb Administration
 Mongodb Index
