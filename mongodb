@@ -12,3 +12,5 @@ Mongodb Index
 mongodb Storage
 Mongodb Schema
 Mongodb Security
+extra:
+query based (filter)
