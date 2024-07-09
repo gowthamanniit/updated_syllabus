@@ -5,6 +5,7 @@ Mongodb Create Collections(tables)
 Mongodb Drop Collections(delete)
 Mongodb Drop Database
 Mongodb Read Operations(select or view collection values)
+Mongodb Sort (Ascending or Descending)
 Mongodb Write Operations (insert-single and mulitple documents)
 Mongodb Update command
 Mongodb Remove Row values
@@ -17,4 +18,4 @@ mongodb Storage
 Mongodb Schema
 Mongodb Security
 extra:
-query based (filter,ascending,Descending)
+query based (filter)
