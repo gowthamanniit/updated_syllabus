@@ -1,7 +1,8 @@
 Introduction
 Environment Setup
 React App folder structure
-Components Basic- function & class (single modules can't be multiples exports)
+Components Basic- function & class 
+(single modules can't be multiples exports)
 one Top level element - grouping
 how to use expression? - {}
 how to use control statements in react ?
