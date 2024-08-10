@@ -16,7 +16,8 @@ React Es-6 -1. Arrow Function (without parameter,with parameter)
             5. spread operator 
             6. Ternary operator 
             7. modules(export and import)
-            7.1 export & import images,without export image/only import
+            7.1 export & import images,
+	   without export image/only import
 React render - 2 ways
 React JSX
 React Styling and css
@@ -36,12 +37,14 @@ select option,email,date,time,week,file,range,
 hidden,button,submit,reset.
 
 React Event Handler / Handling events
--onClick, onChange, onFocus, onBlur, onSubmit(only press submit button)
+-onClick, onChange, onFocus, onBlur, onSubmit
+(only press submit button)
 -event.preventDefault() (only <input type=submit>,<button>)
 -event.target.value, event.target.id, event.target.name
 -event.target.tagName, event.target.type
 
-value attribute in textfield issue (because return is always running)
+value attribute in textfield issue 
+(because return is always running)
 
 React Hooks --> only function components
 	-useState
@@ -67,9 +70,7 @@ HTTP and React (AXIOS)
 
 Integration with other libraries
 
-
-
-================expression + control statements in react ==========
+==========expression + control statements in react ==========
 function App()
 {
   var m1=100
