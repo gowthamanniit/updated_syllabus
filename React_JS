@@ -1182,6 +1182,21 @@ function Gowtham()
   )
 }
 export default Gowtham
+
+//syntax very important using spread opertor...
+ const [state, setState] = useState({ a: 1, b: 2 });
+        const updateState = () => {
+          setState(prevState => ({ ...prevState, c: 3 }));
+        };
+ex:
+
+const[inputs,setInputs]=useState({})
+
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs(values => ({...values, [name].: value}))
+      }
 //=====================axios http header or api handling =======
 import axios from "axios"
 
