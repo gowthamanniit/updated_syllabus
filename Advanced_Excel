@@ -1,0 +1,63 @@
+advanced excel :
+
+variable declaration
+
+datatypes?
+	integer,	long
+	(32767)		2147483647       
+	float,string,boolean,
+
+how to display output in msgbox?
+how to display data in excel particular cell?
+
+
+how to use excel formula's in vba code?
+(application.evalute)
+
+joining or concatenation operator: &
+
+operator:
+i) arithmetic operator : + - * / mod
+ii) relational operator: <,>,<=,>=,=,<> !=
+iii) logical operator: and or not
+iv) assignment operator: =
+
+control statements:
+i) simple if
+ii) if else
+iii) if else if
+iv) nested if
+
+looping statement:
+
+i) for loop
+ii) while loop
+iii) do..while loop
+iv) nested loop
+
+			
+how to add extra image icons in msgbox?
+
+
+how to lock particular cell?
+
+how to find dynamic count in particular columns
+
+dateformat : ex:format(date,"dd-mmm-yyyy")
+numberformat:use range
+
+array concepts
+===============
+-single dimensional array
+-multidimensional array
+- redim (redimensions)
+	(memory reallocate - ie. erase all data )
+
+-function calling with/without parameters
+
+-forms(login form,register form)
+
+-modules ( reuse  functions - common code at one place)
+	 (access from all sheets + forms)
+
+- how to protect your code using password?
