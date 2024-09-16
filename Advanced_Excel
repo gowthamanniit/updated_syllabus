@@ -41,7 +41,7 @@ how to add extra image icons in msgbox?
 
 how to lock particular cell?
 
-how to find dynamic count in particular columns
+how to find dynamic count in particular columns/rows
 
 dateformat : ex:format(date,"dd-mmm-yyyy")
 numberformat:use range
@@ -60,4 +60,4 @@ array concepts
 -modules ( reuse  functions - common code at one place)
 	 (access from all sheets + forms)
 
-- how to protect your code using password?
+- how to protect your vba code using password?
