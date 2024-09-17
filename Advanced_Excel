@@ -47,6 +47,8 @@ dateformat : ex:format(date,"dd-mmm-yyyy")
 numberformat:use range
 find no. of days + weekday
 
+how to load images in excel ? ex:loadpicture
+
 array concepts
 ===============
 -single dimensional array
