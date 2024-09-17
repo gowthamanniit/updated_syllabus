@@ -61,3 +61,11 @@ array concepts
 	 (access from all sheets + forms)
 
 - how to protect your vba code using password?
+
+- hyperlink:
+
+==========================================================================
+
+
+Worksheets("UserInfo").Select
+Worksheets("UserInfo").Range("A1").Select
