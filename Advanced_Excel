@@ -45,6 +45,7 @@ how to find dynamic count in particular columns/rows
 
 dateformat : ex:format(date,"dd-mmm-yyyy")
 numberformat:use range
+find no. of days + weekday
 
 array concepts
 ===============
