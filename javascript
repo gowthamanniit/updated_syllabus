@@ -49,6 +49,22 @@ let p=document.getElementById("pass").value;
 				alert("not accepted");
 			}
 =====================================================================
+string to chararray
+====================
+var k="akashayasri";
+
+		var s=k.split('');
+
+		console.log(k);
+		console.log(s);
+		for(i=0;i<s.length;i++)
+		{
+			document.write("<h1>Index:"+i+"="+s[i]+"</h1>");
+		}
+chararray to string
+=====================
+hw
+===========================
 <script type="text/javascript">
 		function show(event)
 		{
