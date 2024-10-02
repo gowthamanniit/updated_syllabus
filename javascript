@@ -270,4 +270,33 @@ document.write("<br>"+Math.PI);
 <div id="res"></div>
 </body>
 </html>
+========================open and close window==============
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		window open
+	</title>
+	<script type="text/javascript">
+		var f;
+		function openfile()
+		{
+			
+			f=window.open("arrdemo.html");
+			//window.location.href="arrdemo.html";
+		}
+		function closefile()
+		{
+			f.close();	
+		}
+		
+	</script>
+</head>
+<body>
+	<button onclick="openfile()"> open array file </button>
+	<button onclick="closefile()"> close array file </button>
 
+</body>
+</html>
