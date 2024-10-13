@@ -1,0 +1,11 @@
+introduction and installation of python
+introduction to django
+introduction to website front-end (HTML,CSS)
+introduction to website front-end(bootstrap,jinja2)
+installing packages and dependencies of django setup
+understanding the routing(url)
+usage of views and creating function based views
+template usage and roles
+CRUD opertions on model/database
+understanding django form - form and model form
+django admin basis and admin.py
