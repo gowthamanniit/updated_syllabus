@@ -56,6 +56,62 @@ find memory location of variable and object.
 		System.out.println(System.identityHashCode(k));
 		System.out.println(System.identityHashCode(b));
 		System.out.println(Integer.toHexString(System.identityHashCode(b)));
+=================serialization vs deserialization============
+
+	package pack2;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Stud implements Serializable
+{
+	int id;
+	String name;
+	Stud(int id,String name)
+	{
+		this.id=id;
+		this.name=name;
+	}
+}
+
+public class SerialDemo {
+
+	public static void main(String[] args)throws Exception {
+		// TODO Auto-generated method stub
+		Stud s1=new Stud(1001,"sasi");
+		
+		ObjectOutputStream oos=new ObjectOutputStream
+				(new FileOutputStream("d:/sajith.txt"));
+		oos.writeObject(s1);
+		System.out.println("serialization success");
+		oos.close();
+	}
+	
+
+}
+===================
+	package pack2;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class Deserialdemo {
+
+	public static void main(String[] args)throws Exception {
+
+		
+		ObjectInputStream ois=new ObjectInputStream
+				(new FileInputStream("d:/sajith.txt"));
+		
+		Stud obj=(Stud)ois.readObject();
+		System.out.println(obj.id);
+		System.out.println(obj.name);
+		ois.close();
+	}
+
+}
+
 ================================java networking=================
 
   package serverpgm;
