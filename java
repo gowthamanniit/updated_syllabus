@@ -168,4 +168,56 @@ public class ClientPgm {
 	}
 
 }
+================db connection mysql====================
+	java mysql connection program:
+==============================
+step 1:
+	create sample database , table 
+
+ex:
+#create database sajith;
+use sajith;
+#create table student(rno int,sname varchar(22),mark int);
+insert into student values(10003,'aadhi',29);
+select * from student;
+
+step 2:
+	google: download mysql-connector-java-8.0.1.jar
+
+step 3:
+	eclipse open--> project name right click--> properties -->
+	java build path --> libraries -->add external jars --> select your downloaded jar file -->apply and close.
+
+step 4:	program type:
+
+package pack2;
+import java.sql.*;
+public class DbPgm {
+	public static void main(String[] args) {
+		try
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("driver accepted");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost/sajith?user=root&password=12345");
+			System.out.println("connection success");
+			Statement st=con.createStatement();
+			ResultSet rs=st.executeQuery("select * from student");
+			while(rs.next())
+			{
+				System.out.println(rs.getString(1));
+				System.out.println(rs.getString(2));
+				System.out.println(rs.getString(3));
+			}
+			rs.close();
+			st.close();
+			con.close();
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("error type:"+e.toString());
+		}
+
+	}
+}
 
