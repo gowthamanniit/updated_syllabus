@@ -6,7 +6,7 @@
  - datatypes (typeof)
  - operators
  - Event Handling (basic)
- - display output (DOM- write,innerHTML)
+ - display output (DOM- write,innerHTML,getElementById,getElementsByTagName)
  - conversion str to int, str to float
  - String inbuilt functions(length,upper,lower,charAt,trim,
                  replace,replaceAll,substring,includes,startsWith,
