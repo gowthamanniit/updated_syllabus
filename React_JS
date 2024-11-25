@@ -1259,3 +1259,139 @@ function Gowtham()
 }
 export default Gowtham
 //=====================
+//=========================react + node + express+ mongocloud====
+// =dinesh sujitha batch =====================
+react program:
+===============
+import axios from 'axios'
+import {useState} from 'react'
+function App()
+{
+  const[rno,setRno]=useState(0)
+  const[name,setName]=useState("")
+  const[mark,setMark]=useState(0)
+  const[output,setOuput]=useState(null)
+
+  const dis=(event)=>{
+    if(event.target.id==="rid")
+      setRno(event.target.value)
+    if(event.target.id==="nid")
+      setName(event.target.value)
+    if(event.target.id==="mid")
+      setMark(event.target.value)
+    
+  }
+  const insfun=()=>{
+        var myinputs={rno:rno,name:name,mark:mark}
+        console.log(myinputs)
+        axios.get("http://localhost:8900",{params:myinputs}).then((res)=>{
+          console.log(res.data)
+          setOuput(res.data)
+        }).catch((err)=>{
+          console.log(err.response.data)
+        })
+  }
+  return(
+    <>
+    <form>
+      <h1>DataBase - Using MVC - Model View COntroller</h1>
+      Enter roll number:<input id="rid" type="text" value={rno} onChange={(e)=>dis(e)}></input><br></br>
+      Enter Student Name:<input id="nid" type="text" value={name} onChange={(e)=>dis(e)}></input><br></br>
+      Enter Student Mark:<input id="mid" type="text" value={mark} onChange={(e)=>dis(e)}></input><br></br>
+      <input type="button" value="Insert/Save" onClick={insfun}></input>
+    <h1>{output!==null  && "successfully inserted. id =" + output.insertedId}</h1>
+    </form>
+    </>
+  )
+}
+export default App
+
+node js + express js:
+=====================
+server.js
+=========
+var http=require("http")
+var url=require("url")
+//var func=require("./serverdatabase")  // local
+var func=require("./serverdbcloud")    // cloud
+http.createServer(async (req,res)=>{
+//
+console.log("test from react")
+
+res.setHeader('Access-Control-Allow-Origin', '*'); /* @dev First, read about security */
+res.setHeader('Access-Control-Allow-Methods', 'OPTIONS,GET');
+res.setHeader('Access-Control-Max-Age', 2592000); // 30 days
+
+
+var myurl=url.parse(req.url,true)
+console.log(myurl) //full url information
+var myqry=myurl.query
+console.log(myqry) // to filter query only
+var finaljson=JSON.parse(JSON.stringify(myqry))
+console.log(finaljson) // to json only (remove object null type)
+
+try
+{
+    res.writeHead(200,{'Content-Type':'application/json'})
+    var dataset=await func.insertfun(finaljson) // pass to serverdatabase.js
+    var finalresult=JSON.parse(JSON.stringify(dataset))
+    res.write(finalresult) // goto react
+}
+catch{
+    console.log("error")
+}
+finally{
+    res.end();  // 
+}
+
+
+}).listen(8900)
+console.log("port listening at 8900")
+
+serverdatabase.js(local)
+========================
+const {MongoClient}=require("mongodb")
+const condb=new MongoClient("mongodb://127.0.0.1:27017")
+condb.connect()
+async function insertfun(myinput)
+{
+    console.log("myinput:",myinput)
+try{
+    var data=await condb.db("student").collection("details").insertOne(myinput)    
+    return JSON.stringify(data)
+}
+catch{
+    console.log("error")  
+    await condb.close()  
+}
+}
+module.exports={insertfun} // anywhwer access 
+serverdbcloud.js
+==================
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://gowthaman:JYwMixqlFYZBteBD@gowthamcluster.nbman.mongodb.net/?retryWrites=true&w=majority&appName=gowthamcluster";
+
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
+
+async function insertfun(myinput) {
+  try {
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+  var data= await client.db("gdatabase").collection("gcollection").insertOne(myinput)
+    return JSON.stringify(data)
+ 
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
+module.exports={insertfun}
+//run().catch(console.dir);
