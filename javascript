@@ -6,7 +6,7 @@
  - datatypes (typeof)
  - operators
  - Event Handling (basic)
- - display output (DOM- write,innerHTML,getElementById,getElementsByTagName)
+ - display output (DOM- write,innerHTML,getElementById,getElementsByTagName,getElementsByName)
  - conversion str to int, str to float
  - String inbuilt functions(length,upper,lower,charAt,trim,
                  replace,replaceAll,substring,includes,startsWith,
@@ -296,6 +296,22 @@ document.write("<br>"+Math.PI);
 </head>
 <body>
 	<button onclick="openfile()"> open array file </button>
+
+======================getElementsByName================
+var s=document.getElementsByName("gen");
+			var len=s.length;
+			var ans="Selected Gender:";
+			console.log(s.length);
+			for(var i=0;i<len;i++)
+			{
+				//if(document.getElementById("g"+(i+1)).checked==true)
+				//or
+				if(s[i].checked==true)
+					//ans=ans+document.getElementById("g"+(i+1)).value;
+					//or
+					ans=ans+s[i].value;
+			}
+			document.getElementById("res").innerHTML=ans;
 	<button onclick="closefile()"> close array file </button>
 
 </body>
