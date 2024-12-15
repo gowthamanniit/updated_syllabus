@@ -83,3 +83,10 @@ Sheet26.Cells(i + 1, j + 1).Borders.LineStyle = xlContinuous
 Sheet26.Cells(i + 1, j + 1).Borders.Color = RGB(217, 217, 217)
 Sheet26.Cells(i + 1, j + 1).Borders.Weight = xlThin
 
+Set sh = ThisWorkbook.Sheets("funcalling")
+rc = Application.WorksheetFunction.CountA(sh.Range("a:a"))
+cc = Application.WorksheetFunction.CountA(sh.Range("1:1"))
+
+sheet1.cells(1,3)= ?
+
+
