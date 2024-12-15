@@ -89,4 +89,8 @@ cc = Application.WorksheetFunction.CountA(sh.Range("1:1"))
 
 sheet1.cells(1,3)= ?
 
+sh.Cells.Range("a10:d20").Interior.Color = vbBlue
+sh.Cells.Range("a10:d20").Borders.LineStyle = xlContinuous
+sh.Cells.Range("a10:d20").Borders.Color = RGB(111, 222, 88)
+sh.Cells.Range("a10:d20").Borders.Weight = xlThin
 
