@@ -69,6 +69,17 @@ array concepts
 
 ==========================================================================
 
+hyperlink
 
 Worksheets("UserInfo").Select
 Worksheets("UserInfo").Range("A1").Select
+
+
+Sheet26.Cells(i + 1, j + 1).Interior.Color = vbWhite
+Sheet26.Cells(i + 1, j + 1).Font.Color = vbBlack
+Sheet26.Cells(i + 1, j + 2).Font.Size = 20
+
+Sheet26.Cells(i + 1, j + 1).Borders.LineStyle = xlContinuous
+Sheet26.Cells(i + 1, j + 1).Borders.Color = RGB(217, 217, 217)
+Sheet26.Cells(i + 1, j + 1).Borders.Weight = xlThin
+
