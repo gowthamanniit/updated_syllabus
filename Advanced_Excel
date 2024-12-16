@@ -74,6 +74,11 @@ hyperlink
 Worksheets("UserInfo").Select
 Worksheets("UserInfo").Range("A1").Select
 
+mysh.Cells.Range("f18") = "answer:" & tot
+
+For i = 0 To size - 1
+sh.Cells.Range("a" & (i + 1)) = arr(i)
+Next i
 
 Sheet26.Cells(i + 1, j + 1).Interior.Color = vbWhite
 Sheet26.Cells(i + 1, j + 1).Font.Color = vbBlack
