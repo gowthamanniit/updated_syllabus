@@ -94,3 +94,9 @@ sh.Cells.Range("a10:d20").Borders.LineStyle = xlContinuous
 sh.Cells.Range("a10:d20").Borders.Color = RGB(111, 222, 88)
 sh.Cells.Range("a10:d20").Borders.Weight = xlThin
 
+Application.Sheets("mularr").Visible = True
+Application.Sheets("sheet1").Visible = False
+Application.Sheets("sheet7").Visible = False
+Application.Sheets("sheet9").Visible = False
+Application.Sheets("sheet2").Visible = False
+'Application.Sheets.Visible = False
