@@ -1,2 +1,25 @@
 Installation
 introduction
+power bi architecture 
+power bi query editor
+load data,combine data,transform data, combine and transform, combine and load
+datatypes
+getdata from sql server, text or csv , mysql and web url.
+pivot and unpivot transform
+removing column and duplicate
+stacked and clustered chart
+line , area and bar charts
+100% stacked or column charts
+Map visuals
+card ,funnel, table, matrix
+gauage chart,ribbon chart
+donut chart,waterfall chart
+filter chart
+Pie chart
+Multi row card
+python visuals
+Q & A AI tools chart
+Narrative Charts
+power bi service and mobile view
+DAX functions
+publish 
