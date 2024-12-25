@@ -3,7 +3,7 @@ Types of CSS -1. Inline css 2. Internal css 3. External css
 
 Selector, property,value,declaration(property:value)
 
-Nested Selector,(link - 1. link, 2.hover 3. active 4.visited)
+Nested Selector(space > + ~),(link - 1. link, 2.hover 3. active 4.visited)
 
 Property: value, background-color, border,border-radious,
 margins top,left,right,bottom,padding, opacity,
