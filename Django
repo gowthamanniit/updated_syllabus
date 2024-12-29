@@ -14,3 +14,26 @@ template usage and roles
 CRUD opertions on model/database
 understanding django form - form and model form
 django admin basis and admin.py
+
+===============================start views.py===============
+from django.http import HttpResponse
+def show(request):
+    return HttpResponse("<h1>Welcome To Django First Program</h1>")
+
+import datetime
+from django.http import HttpResponse
+def showdatetime(request):
+    ctd=datetime.datetime.now()
+    ans="<h1>Today's Date and Time: %s </h1>" %ctd
+    return HttpResponse(ans)
+
+
+===============================end views.py=================
+===============================start urls.py===============
+from myapp import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('show/',views.show)
+]
+===============================end urls.py===============
+
