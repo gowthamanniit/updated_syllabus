@@ -1,8 +1,13 @@
 introduction and installation of python
-introduction to django
+introduction to django 
 introduction to website front-end (HTML,CSS)
 introduction to website front-end(bootstrap,jinja2)
 installing packages and dependencies of django setup
+i) django installation: pip install django
+ii) project fodler creation : django-admin startproject projectname
+                          (settings,urls)
+iii) App folder creation: : py manage.py startapp appname
+                            (admin,models,views)
 understanding the routing(url)
 usage of views and creating function based views
 template usage and roles
