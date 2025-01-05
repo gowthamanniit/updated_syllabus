@@ -203,6 +203,26 @@ function Gowtham()
 }
 export default Gowtham
 =================================Map method + how to use inline css basic================================
+
+function App()
+{
+  var arr=[11,22,33,44,55,66,77,88,99]
+  var s=0
+  return(
+    <>
+      <h1>React Loop</h1>
+      <ol type="A">
+      {arr.map((v,i)=><li key={i}>{v} {i}</li>)}
+      </ol>
+      <h1>or method</h1>
+      <ol type="A">
+      {arr.map((v)=><li key={s=s+1}>{v} {s}</li>)}
+      </ol>
+    </>
+  )
+}
+export default App
+
 function Gowtham()
 {
   var arr=[11,22,233,44,66,99,112]
