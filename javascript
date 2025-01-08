@@ -6,7 +6,8 @@
  - datatypes (typeof)
  - operators
  - Event Handling (basic)
- - display output (DOM- write,innerHTML,getElementById,getElementsByTagName,getElementsByName)
+ - display output (DOM- write,innerHTML,getElementById,getElementsByTagName,
+getElementsByName)
  - conversion str to int, str to float
  - String inbuilt functions(length,upper,lower,charAt,trim,
                  replace,replaceAll,substring,includes,startsWith,
@@ -20,13 +21,15 @@
  - jumping statements (1.continue,2.break)
  - Array (Array(""))
  - Convert Str to CharArray and chararray to str
- - setTimout-function,window.open,window.location.href="path"-->overwrite page,this.close()
+ - setTimout-function,window.open,window.location.href="path"--
+>overwrite page,this.close()
  - input from forms (radio,checkbox,select,window.document.bgColor="red";)
  - regular expression
  - user defined functions(create external .js file and link to html file)
  - javascript Date 
  - json
- - project: password validation(atleast 1 caps,1small,1 special char, 1 digit, count: 8)
+ - project: password validation(atleast 1 caps,1small,1 special char, 
+1 digit, count: 8)
 =======================================================================
 let p=document.getElementById("pass").value;
 				//alert(p);
