@@ -24,6 +24,8 @@ getElementsByName)
  - setTimout-function,window.open,window.location.href="path"--
 >overwrite page,this.close()
  - input from forms (radio,checkbox,select,window.document.bgColor="red";)
+ - DOM - css style change at runtime.
+ex:document.getelementById("idname").style.property=value;
  - regular expression
  - user defined functions(create external .js file and link to html file)
  - javascript Date 
