@@ -27,7 +27,7 @@ getElementsByName)
  - DOM - css style change at runtime.
 ex:document.getelementById("idname").style.property=value;
  - How to use QuerySelector?
-use:  in body section don't use events
+use:  in body section don't use events(like jquery)
  - regular expression
  - user defined functions(create external .js file and link to html file)
  - javascript Date 
