@@ -348,3 +348,39 @@ var s=document.getElementsByName("gen");
 
 </body>
 </html>
+======================================query selector -->apply all works ==============
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function dis()
+		{
+			document.querySelector("button").style.backgroundColor="green";
+			document.querySelector("h1").style.backgroundColor="green";
+			document.querySelector(".mycla").style.backgroundColor="green";
+			document.querySelector("#id2").style.backgroundColor="green";
+	var data=document.querySelector("input").value;
+	alert(data);
+			
+			var but=document.querySelector("#but1")
+			but.addEventListener("click",function(){
+				alert("Button Clicked using querySelector and addEventListener");
+				document.querySelector("input").value="gowthaman";
+			});
+		}
+	</script>
+</head>
+<body onload="dis()">
+	<input type="text" value="manoj">
+	<button id="but1">click me </button>
+	<h1>welcome to header 1</h1>
+	<h2 id="id2">welcome to header 2</h2>
+	<h3 class="mycla">welcome to header 3</h3>
+
+</body>
+</html>
+==================================================================================
