@@ -323,3 +323,28 @@ var s=document.getElementsByName("gen");
 
 </body>
 </html>
+
+======================
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			document.getElementById("b1").style.backgroundColor="red";
+			document.getElementById("b1").style.fontSize="44px";
+			document.getElementById("bid").style.padding="30px";
+			document.getElementById("bid").style.border="10px double red";
+			document.getElementById("bid").style.boxShadow="10px 10px 10px 10px black";
+		}
+	</script>
+</head>
+<body id="bid">
+	<h1>css style dynamic - DOM</h1>
+	<button id="b1" onclick="dis()">clickme</button>
+
+</body>
+</html>
