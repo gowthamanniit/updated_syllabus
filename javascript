@@ -35,6 +35,22 @@ use:  in body section don't use events(like jquery)
  - project: password validation(atleast 1 caps,1small,1 special char, 
 1 digit, count: 8)
 =======================================================================
+conversion:
+var k1="1";
+var k2=3;
+
+			console.log(+k1+k2);  //4
+var k1="1";
+var k2="3";
+			console.log(+k1 + +k2); //4
+var k1=1;
+var k2="3";
+			console.log(k1 + +k2); //4
+var k1=1;
+var k2=3;
+			console.log(k1 + k2); //4
+
+
 let p=document.getElementById("pass").value;
 				//alert(p);
 		
