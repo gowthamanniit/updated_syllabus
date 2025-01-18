@@ -40,7 +40,7 @@ hidden,button,submit,reset.
 
 React Event Handler / Handling events
 -onClick, onChange, onFocus, onBlur, onSubmit
-(only press submit button)
+(only press submit button or <button>clickme</button>)
 -event.preventDefault() (only <input type=submit>,<button>)
 -event.target.value, event.target.id, event.target.name
 -event.target.tagName, event.target.type
