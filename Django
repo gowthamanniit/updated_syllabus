@@ -11,6 +11,7 @@ iii) App folder creation: : py manage.py startapp appname
 understanding the routing(url)
 usage of views and creating function based views
 template usage and roles
+static file handling (images,css,js)
 CRUD opertions on model/database
 understanding django form - form and model form
 django admin basis and admin.py
