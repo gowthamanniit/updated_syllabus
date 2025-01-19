@@ -46,4 +46,50 @@ urlpatterns = [
     path('show/',views.show)
 ]
 ===============================end urls.py===============
+show full output of html file with or without parameters]
+settings.py
+============
+
+1)import os
+2)installed apps =
+         'myapp', 
+3) templates=
+'DIRS': [os.path.join(BASE_DIR,'templates')],
+
+create templates folder in myapp folder
+========================================
+write html files
+ex:
+<html>
+<body>
+<h1> Welcome to Django Variable Access</h1>
+<h1>My name is {{sname}}</h1>
+<h1>My rno is {{rno}}</h1>
+<h1> my mark is {{mark}}</h1>
+</body>
+</html>
+
+views.py
+---------
+from django.shortcuts import render
+def showhtml(request):
+    return render(request,"simple.html")
+or
+from django.template import loader
+from django.http import HttpResponse
+def  loadhtml(request):
+    mytemp=loader.get_template("simple.html")
+    return HttpResponse(mytemp.render())
+
+or
+#passing json
+def loadjson(request):
+    sobj={
+        "rno":1991,
+        "sname":"suryapraksh",
+        "mark":99
+        }
+    mytemp=loader.get_template("simplehtmljson.html")
+    return HttpResponse(mytemp.render(sobj)) # object passing
+=================================================html end======================
 
