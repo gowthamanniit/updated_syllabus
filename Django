@@ -93,4 +93,41 @@ def loadjson(request):
     mytemp=loader.get_template("simplehtmljson.html")
     return HttpResponse(mytemp.render(sobj)) # object passing
 =================================================html end======================
+=======static file handling (images,css,js)=================================
 
+settings.py
+============
+installed app: 'myapp'
+static_url="/static/"
+myapp folder:
+=============
+create static folder -->create images folder -->copy and paste sample images.
+templates folder html file:
+===========================
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	{% load static %}
+</head>
+<body>
+
+<center><h1>Django Loading Images</h1>
+<img src="{% static '/images/gowtham.jfif' %}">
+</center>
+</body>
+</html>
+views.py
+=========
+from django.shortcuts import render
+def showimage(request):
+    return render(request,"image.html")
+url.py
+======
+............
+run
+====
+................
+====================================static file handling end=========
