@@ -1112,7 +1112,24 @@ function Gowtham()
   )
 }
 export default Gowtham
-
+---------------------------useState Hook using object----------
+import { useState } from "react"
+function App(props)
+{
+  const[obj,setObj]=useState(props.myobj)
+  const show=()=>{
+    setObj({rno:1009,sname:"karthi"})
+  }
+  return(
+    <>
+      <h1>{obj.rno}</h1>
+      <h1>{obj.sname}</h1>
+      <button onClick={show}>change</button>
+    </>
+  )
+}
+export default App
+------------------useState hook end ----------------------
 import { useState,useEffect } from 'react'
 function Gowtham()
 {
