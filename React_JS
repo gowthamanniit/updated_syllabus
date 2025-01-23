@@ -1236,6 +1236,66 @@ const[inputs,setInputs]=useState({})
         const value = event.target.value;
         setInputs(values => ({...values, [name].: value}))
       }
+//================react life cycle compoenents===============
+//import React from "react";
+//class App extends React.Component
+import { Component } from "react"
+class App extends Component
+{ 
+  constructor(props)
+  {
+    super(props)
+    this.state=this.props.myobj
+    this.state.curdt=new Date();
+    console.log("constructor called")
+  }
+  componentDidMount()
+  {
+    setTimeout(()=>{this.setState({rno:1234})},4000)
+  }
+  componentDidUpdate()
+  {
+    document.getElementById("r1").innerHTML="component updated"
+  }
+  shouldComponentUpdate()
+  {
+    return true;
+  }
+  getSnapshotBeforeUpdate(prevState,prevProps)
+  {
+    
+    document.getElementById("r2").innerHTML="Old Value:"+prevProps.rno+" "+prevProps.curdt;
+    document.getElementById("r3").innerHTML="New Value:"+this.state.rno+" "+new Date();
+    return this.state;
+  } 
+  render()
+  {
+    const updatefun=()=>{
+      var newrno=parseInt(document.getElementById("t1").value);
+      this.setState({rno:newrno})
+    }
+    
+    const reloadfun=()=>{
+      window.location.reload()
+    }
+    return(
+      <>
+        <h1>2.update life cycle components</h1>
+        <h2>{this.state.rno}</h2>
+        <div id="r1"></div>
+        <div id="r2"></div>
+        <div id="r3"></div>
+        <input type="text" id="t1" placeholder="Enter new rno"></input>
+        <button onClick={updatefun}>update rno</button>
+        <button onClick={reloadfun} >refresh</button> 
+      </>
+    )
+  }
+}
+export default App
+
+
+
 //=====================axios http header or api handling =======
 import axios from "axios"
 
