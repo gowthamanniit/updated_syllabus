@@ -19,7 +19,7 @@ getElementsByName)
  - switch statements
  - loop (for, while, do..while loop,nested loop)
  - jumping statements (1.continue,2.break)
- - Array (Array(""))
+ - Array (Array("")) - inbuilt funciton (length,push,sort,pop)
  - Convert Str to CharArray and chararray to str
  - setTimout-function,window.open,window.location.href="path"--
 >overwrite page,this.close()
