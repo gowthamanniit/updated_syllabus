@@ -168,7 +168,47 @@ n.place(x=200,y=400)
 resbut=tkinter.Button(window,text="show selected course:",command=show)
 resbut.place(x=200,y=450)
 window.mainloop()
+from tkinter import *
+from tkinter import messagebox
+import tkinter
+win=tkinter.Tk()
+wi=win.winfo_screenwidth()
+he=win.winfo_screenheight()
+win.configure(width=wi,height=he,bg="cyan")
 
+def dis():
+    ans=""
+    #messagebox.showinfo("selected :",course1.get())
+    if(course1.get()=="1"):
+        ans=ans+"C"
+    if(course2.get()=="1"):
+        ans=ans+"C++"
+    if(course3.get()=="1"):
+        ans=ans+"JAVA"
+    
+    messagebox.showinfo("selected :",ans)
+    
+titlbl=tkinter.Label(win,text="Check Button Demo",font=("arial",55))
+titlbl.place(x=300,y=100)
+
+course1=StringVar()
+course2=StringVar()
+course3=StringVar()
+course1.set("0")
+course2.set("0")
+course3.set("0")
+
+c1=tkinter.Checkbutton(win,text="C",var=course1)
+c2=tkinter.Checkbutton(win,text="CPP",var=course2)
+c3=tkinter.Checkbutton(win,text="JAVA",var=course3)
+
+c1.place(x=200,y=200)
+c2.place(x=400,y=200)
+c3.place(x=600,y=200)
+
+but=tkinter.Button(win,text="course",command=dis)
+but.place(x=300,y=300)
+win.mainloop()
 combobox
 ===========
 import tkinter
