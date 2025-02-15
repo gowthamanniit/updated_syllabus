@@ -6,6 +6,7 @@ REPL Terminal
 Callbacks Concepts
 Event Loop
 Event Emitter
+nodemon
 Buffers and Streams
 Web Modules
 Body-Parser
