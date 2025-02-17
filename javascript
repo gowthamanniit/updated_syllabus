@@ -19,8 +19,8 @@ getElementsByName)
  - switch statements
  - loop (for, while, do..while loop,nested loop)
  - jumping statements (1.continue,2.break)
- - Array (Array("")) - inbuilt funciton (length,push,sort,pop)
- - Convert Str to CharArray and chararray to str
+ - Array (Array("")) - inbuilt funciton (length,push,sort,pop,filter)
+ - Convert Str to CharArray(split) and chararray to str
  - setTimout-function,window.open,window.location.href="path"--
 >overwrite page,this.close()
  - input from forms (radio,checkbox,select,window.document.bgColor="red";)
@@ -400,3 +400,23 @@ var s=document.getElementsByName("gen");
 </body>
 </html>
 ==================================================================================
+array function split filter:
+data="gowthamanKARUR"
+arr=data.split('')
+console.log(arr)
+
+len=arr.length;
+console.log(len)
+
+vowels="aeiouAEIOU"
+
+for(var i=0;i<len;i++)
+{
+    if(vowels.includes(arr[i]))
+        console.log(arr[i])
+    }
+//or advanced tech --> vowels in array format
+var ans=arr.filter((item)=>{
+    return vowels.includes(item)
+})  
+console.log(ans)
