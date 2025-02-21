@@ -122,3 +122,43 @@ nested list
 	</ol>
 </body>
 </html>
+========================
+	<style type="text/css">
+		#outdiv
+		{			
+/*			display: inline-block;			*/
+			display: flex;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="outdiv">
+		<div id="indiv1">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font3</font>
+			<font>font4</font>
+		</div>
+		<div id="indiv2">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+		</div>
+		<div id="indiv2">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+		</div>
+		<div id="indiv2">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+		</div>
+
+	</div>
+
+</body>
