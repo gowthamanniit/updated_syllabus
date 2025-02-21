@@ -15,7 +15,7 @@ Mongodb Limt and skip method
 Mongodb Administration(backup and restore)
 Mongodb Index
 mongodb Storage - find total no. of records,storage size
-Mongodb Schema
-Mongodb Security
+Mongodb Schema  - mongoose library
+Mongodb Security - ,,
 extra:
 query based (filter)
