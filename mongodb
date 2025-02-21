@@ -14,7 +14,7 @@ Data Modeling
 Mongodb Limt and skip method
 Mongodb Administration(backup and restore)
 Mongodb Index
-mongodb Storage
+mongodb Storage - find total no. of records,storage size
 Mongodb Schema
 Mongodb Security
 extra:
