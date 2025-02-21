@@ -9,7 +9,7 @@ Mongodb Sort (Ascending or Descending)
 Mongodb Write Operations (insert-single and mulitple documents)
 Mongodb Update command
 Mongodb Remove Row values
-Mongodb Projection
+Mongodb Projection(show limited fields or columns)
 Data Modeling
 Mongodb Limt and skip method
 Mongodb Administration(backup and restore)
