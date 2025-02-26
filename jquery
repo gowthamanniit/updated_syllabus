@@ -1,9 +1,8 @@
 - Introduction
 - syntax , simple jquery program
-- prepend , append, after,remove function
+- prepend , append, after,remove,- hide, show , empty function
 - slideUp,SlideDown,slideToggle
 - fadeIn,fadeOut,fadeToggle
-- hide, show , empty
 - animate, stop
 - innerHTML
 - css
