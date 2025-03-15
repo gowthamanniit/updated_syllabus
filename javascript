@@ -420,3 +420,26 @@ var ans=arr.filter((item)=>{
     return vowels.includes(item)
 })  
 console.log(ans)
+-----------------------get data from url parameters get method---------------
+ <script type="text/javascript">
+        function fillamt()
+        {
+            var cururl=window.location.href
+            // to get current url in address bar
+            console.log("Current URL:",cururl)
+
+            var url = new URL(cururl);
+            var amt = url.searchParams.get("amount");
+            console.log("amount:",amt);
+
+            document.getElementById("price").value=amt;
+        }
+    </script>
+
+<body class="bg-gray-900" onload="fillamt()">
+.....
+....
+ <input type="text" id="price" readonly name="amount" placeholder="Enter Amount" class="bg-transparent text-white p-3 h-10 mb-5">
+....
+</body>
+
