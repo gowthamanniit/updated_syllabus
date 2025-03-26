@@ -19,7 +19,7 @@ React Es-6 -1. Arrow Function (without parameter,with parameter)
             7. modules(export and import)
             7.1 export & import images,
 	   without export image/only import
-React render - 2 ways (reactDOM.render() -->depricated react 18 ...)
+
 React JSX
 React Styling and css
 i)inline
