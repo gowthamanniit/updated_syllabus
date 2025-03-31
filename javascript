@@ -9,9 +9,12 @@
  - display output (DOM- write,innerHTML,getElementById,getElementsByTagName,
 getElementsByName)
  - conversion str to int, str to float
+ - toFixed (float to str) ex: f=123.3   f.toFixed(2)  o/p: 123.30
+
  - String inbuilt functions(length,upper,lower,charAt,trim,
                  replace,replaceAll,substring,includes,startsWith,
 		endsWith)
+
  - mathematical inbuilt function
 	(Math.PI,pow,sqrt,ceil,floor,round,trunc,log,sin,con,tan,exp,abs,random)
  - popup(alert , confirm , prompt)
