@@ -29,7 +29,8 @@ React props (Argument passing)
 i) basic (individual attributes)
 ii) passing argument as object normal
 iii) passing argument as object nested
-iv) passing argument using class constructor
+iv) passing argument as array inside objects [{},{},{},...]
+v) passing argument using class constructor
 React State (state could only be used in class components)
 Combine React state and props
 React Forms:
