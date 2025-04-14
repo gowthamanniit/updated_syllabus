@@ -6,6 +6,7 @@
 - animate, stop
 - innerHTML
 - css
+- attr     ex: $("#im1").attr("src","d:/images/g3.jpg");
 - events: 
   1) click       -- only left click once
 	2) dblclick    -- only left click twice
