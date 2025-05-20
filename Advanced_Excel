@@ -17,7 +17,7 @@ how to use excel formula's in vba code?
 joining or concatenation operator: &
 
 operator:
-i) arithmetic operator : + - * / mod
+i) arithmetic operator : + - * / \(floor division) ^(expoential) mod
 ii) relational operator: <,>,<=,>=,=,<> !=
 iii) logical operator: and or not
 iv) assignment operator: =
