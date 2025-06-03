@@ -70,6 +70,13 @@ array concepts
 
 ==========================================================================
 
+lock:
+Set sh = ThisWorkbook.Sheets("test")
+sh.Unprotect "12345"
+sh.Cells.Locked = False
+sh.Cells.Range("a1:g8").Locked = True
+sh.Protect Password:="12345"
+----------------------------------------
 hyperlink
 
 Worksheets("UserInfo").Select
