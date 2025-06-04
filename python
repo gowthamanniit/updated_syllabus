@@ -40,7 +40,26 @@ ShowImage
 - Database Connectivity-Mysql, Create table, Insert table, View the table.
 - Tkinter project (GUI application)
 ---------------------------------
+# old
+def display(v1):
+    print("the value:",v1*v1)
+display(3)
 
+#new
+k=lambda v,s:print("the value:",v*s)
+k(3,5)
+
+#old
+def show(v1,s1):
+    return v1*s1
+ans=show(4,5)
+print(ans)
+
+
+#new
+b=lambda v,s: v*s
+ans=b(3,5)
+print(ans)
 ===============================
 k=[11,12,34,-12,13,18,-21,44,32,-31]
 test=list(map(lambda var:var+10,k))
