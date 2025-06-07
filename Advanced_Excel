@@ -117,3 +117,17 @@ number format:
 ==============
 Set sh = ThisWorkbook.Sheets("dformat")
 sh.Cells.Range("e1:f10").NumberFormat = "#,##,###.00"
+no. of days find and weekday
+============================
+=B19-B18
+=WEEKDAY(B18)
+=VLOOKUP(C18,F18:G24,2,FALSE)
+load picture:
+============
+Dim iname As String
+Private Sub CommandButton1_Click()
+Set sh = ThisWorkbook.Sheets("LOADIMAGE")
+iname = sh.Cells(3, 9)
+Image1.PictureSizeMode = fmPictureSizeModeStretch
+Image1.Picture = LoadPicture("d:/images/" & iname)
+End Sub
