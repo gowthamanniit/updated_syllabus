@@ -113,3 +113,7 @@ Application.Sheets("sheet7").Visible = False
 Application.Sheets("sheet9").Visible = False
 Application.Sheets("sheet2").Visible = False
 'Application.Sheets.Visible = False
+number format:
+==============
+Set sh = ThisWorkbook.Sheets("dformat")
+sh.Cells.Range("e1:f10").NumberFormat = "#,##,###.00"
