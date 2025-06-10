@@ -40,7 +40,7 @@ select option,email,date,time,week,file,range,
 hidden,button,submit,reset.
 
 React Event Handler / Handling events
--onClick, onChange, onFocus, onBlur, onSubmit
+-onClick, onChange, onFocus, onBlur, onSubmit,onInput
 (only press submit button or <button>clickme</button>)
 -event.preventDefault() (only <input type=submit>,<button>)
 -event.target.value, event.target.id, event.target.name
