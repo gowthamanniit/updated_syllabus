@@ -23,6 +23,7 @@ getElementsByName)
  - loop (for, while, do..while loop,nested loop)
  - jumping statements (1.continue,2.break)
  - Array (Array("")) - inbuilt funciton (length,push,sort,pop,filter)
+			ex: arr.sort((a,b)=>{return b-a;}) //int sort
  - Convert Str to CharArray(split) and chararray to str
  - setTimout-function,window.open,window.location.href="path"--
 >overwrite page,this.close()
