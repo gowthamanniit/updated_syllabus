@@ -62,11 +62,12 @@ React Life cyle components --> only class components
 		- render
 	ii) update
 		- constructor
-		- componentDidUpdate
-		- componentDidMount
-		- shouldComponentUpdate
-		- getSnapShotBeforeUpdate
 		- render
+		- shouldComponentUpdate
+		- componentDidMount
+		- componentDidUpdate				
+		- getSnapShotBeforeUpdate
+		
 	iii) unmount
 		-componentWillUnMount
 HTTP and React (AXIOS)
