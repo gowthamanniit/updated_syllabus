@@ -54,6 +54,7 @@ React Hooks --> only function components
 	-useEffect
 	-useForm
 	-ErrorHandling
+	- useContext , createContext
 
 React Life cyle components --> only class components
 	i) mount
@@ -1495,3 +1496,68 @@ async function insertfun(myinput) {
 }
 module.exports={insertfun}
 //run().catch(console.dir);
+=============
+useContext createContext:
+==========================
+
+use:
+// createContext & useContext main use: sharing data globally 
+(all components)
+// overcome props
+
+step 1:
+src--> MyContext.js
+====================
+import { createContext } from "react";
+
+const MyContext=createContext()
+
+export default MyContext
+
+step 2: index.js
+================
+import MyContext from './MyContext'
+
+const sharevalue="Gowthaman sharing all components"
+root.render(
+  <React.StrictMode>
+    <MyContext.Provider value={sharevalue}>
+    <App />
+    </MyContext.Provider>
+  </React.StrictMode>
+);
+
+step 3: App.js or any Component.js
+==================================
+import { useContext } from "react"
+import MyContext from "./MyContext"
+function App()
+{
+  const contextValue=useContext(MyContext)
+  return(
+    <>
+      <h1>Welcome to React useContext createContext</h1>
+      <h1>Shared Data:{contextValue}</h1>
+	
+    </>
+  )
+}
+export default App
+
+src : Gowtham.js (extra)
+==================
+import { useContext } from 'react'
+import React from 'react'
+import MyContext from './MyContext'
+
+const Gowtham = () => {
+    const sv=useContext(MyContext)
+  return (
+    <>
+    <div>Gowtham</div>
+    {sv}
+    </>
+  )
+}
+
+export default Gowtham
