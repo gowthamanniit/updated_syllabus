@@ -48,3 +48,41 @@ $("#but").click(function(){
 	$("#mydiv1").hide(7000,function(){
 		alert("with call back ");});
 	});	
+
+-----------callback old new model in detail-----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".b1").on("click",function(){	
+			$("p").hide(3000);
+			alert("hidden paragraph success old model ");
+			});
+			$(".b2").on("click",function(){	
+			$("p").hide(3000,function(){
+			alert("hidden paragraph success new model ");	
+			});
+			
+			});
+		});
+	</script>
+</head>
+<body>
+	<p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<button class="b1">problem callback</button>
+	<button class="b2">success callback</button>
+	
+</body>
+</html>
+-----------------------------------------------
