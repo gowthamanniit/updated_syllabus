@@ -131,3 +131,9 @@ iname = sh.Cells(3, 9)
 Image1.PictureSizeMode = fmPictureSizeModeStretch
 Image1.Picture = LoadPicture("d:/images/" & iname)
 End Sub
+
+================= clear===========
+Set sh = ThisWorkbook.Sheets("loop")
+sh.Cells.Range("c:c") = ""
+sh.Cells.Range("1:1") = ""
+
