@@ -136,4 +136,17 @@ End Sub
 Set sh = ThisWorkbook.Sheets("loop")
 sh.Cells.Range("c:c") = ""
 sh.Cells.Range("1:1") = ""
+=======================application.evalute==============
+Set sh = ThisWorkbook.Sheets("formula")
+n1 = sh.Cells(2, 3)
+n2 = sh.Cells(3, 3)
+n3 = sh.Cells(4, 3)
+n4 = sh.Cells(5, 3)
 
+ans = Application.Evaluate("sum(" & n1 & "," & n2 & "," & n3 & "," & n4 & ")")
+sh.Cells(10, 3) = ans
+avg = Application.Evaluate("average(" & n1 & "," & n2 & "," & n3 & "," & n4 & ")")
+sh.Cells(11, 3) = avg
+ans = Application.Evaluate("sum(c2:c5)")
+sh.Cells(12, 3) = ans
+===================================================
