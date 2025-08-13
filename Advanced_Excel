@@ -138,7 +138,7 @@ sh.Cells.Range("c:c") = ""
 sh.Cells.Range("1:1") = ""
 =======================application.evalute==============
 Set sh = ThisWorkbook.Sheets("formula")
-n1 = sh.Cells(2, 3)
+n1 = sh.Cells(2, 3)  or n1=sh.cells.range("b3")
 n2 = sh.Cells(3, 3)
 n3 = sh.Cells(4, 3)
 n4 = sh.Cells(5, 3)
