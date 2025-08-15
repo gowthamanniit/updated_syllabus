@@ -1,0 +1,28 @@
+Introduction
+Environment setup
+Simple our first program 
+datatypes (Strings, Characters, Floats, Integers)
+variables
+Functions
+Conditional Statements (if/then)
+writing commands
+Mathematical operations
+Arrays
+
+
+
+===================
+https://docs.julialang.org/en/v1/
+- julia is a high level language like python with the performance of a fast language like c
+- julia is a grat choice for scientific computing with
+  *) Excellent performance
+  *) N-dimensional arrays
+  *) parallel and distributed computing
+- And it is also nice environment for general programming with:
+  *) An active ecosystem of packages and good tools for managing then
+  *) a rich type system
+  *) Iterators, asynchronous tasks, and coroutines.
+
+www.julialang.org/downloads
+
+
