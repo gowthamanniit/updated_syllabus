@@ -13,6 +13,14 @@ Arrays
 
 ===================
 https://docs.julialang.org/en/v1/
+www.cocalc.com
+run: shift + enter
+print("")
+println("")
+typeof("")---> String
+println(""" hai i am gowthaman "1" is my favour "2" is my number """)
+println('$') --->Char
+println('welcome') --> error
 - julia is a high level language like python with the performance of a fast language like c
 - julia is a grat choice for scientific computing with
   *) Excellent performance
