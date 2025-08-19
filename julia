@@ -15,6 +15,8 @@ Arrays
 https://docs.julialang.org/en/v1/
 www.cocalc.com
 run: shift + enter
+
+
 print("")
 println("")
 typeof("")---> String
@@ -33,4 +35,27 @@ println('welcome') --> error
 
 www.julialang.org/downloads
 
+println(typeof(4)) ------>Int64
+println(typeof(-8)) ----->Int64
+println(typeof(4.4))----->Float64
+println(typeof(-4.5)) ---->Float64
+println(typeof(0.0))----->Float64
+println(typeof(7.))------>Float64
 
+julia mode:
+1) REPL (interactive mode)
+ one line command
+2) script fileb(Non interactive mode)
+open vscode or atom or sublime text
+save file : filename.jl extension
+
+run: terminal/command prompt : julia filename.jl
+
+sample code:
+# this is comment
+name="world"
+println("Hello $name!")
+
+the $ symbol within a string performs string interpolation,
+meaning the value of the name variable is inserted directly 
+into the string.
