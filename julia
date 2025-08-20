@@ -1,13 +1,20 @@
 Introduction
 Environment setup
 Simple our first program 
+Escape sequence
 datatypes (Strings, Characters, Floats, Integers)
 variables
+opertors(6 types 1.arithmetic(+ - * / \ ^ % +x -x),
+2. relational 
+3. logical (&& || !)
+4. assignment ( = += -= *= /= %= /= \= %= ^=)
+5.vectorized dot operators, 
+6. bitwise operator (& | ~ << >>))
 Functions
 Conditional Statements (if/then)
 writing commands
 Mathematical operations
-Arrays
+Arrays[]
 
 
 
