@@ -39,7 +39,7 @@ println('welcome') --> error
   *) An active ecosystem of packages and good tools for managing then
   *) a rich type system
   *) Iterators, asynchronous tasks, and coroutines.
-
+- joining operator : *
 www.julialang.org/downloads
 
 println(typeof(4)) ------>Int64
