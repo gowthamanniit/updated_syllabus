@@ -61,7 +61,7 @@ run: terminal/command prompt : julia filename.jl
 sample code:
 # this is comment
 name="world"
-println("Hello $name!")
+println("Hello $name")
 
 the $ symbol within a string performs string interpolation,
 meaning the value of the name variable is inserted directly 
