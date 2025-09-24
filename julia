@@ -11,6 +11,7 @@ opertors(6 types 1.arithmetic(+ - * / \ ^ % +x -x),
 4. assignment ( = += -= *= /= %= /= \= %= ^=)
 5.vectorized dot operators, 
 6. bitwise operator (& | ~ << >>))
+String inbuilt functions
 common control statements
 - Conditional constructs Statements (if end, if else end,if elseif else end,nested if)
 - looping constructs (for , while) 
