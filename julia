@@ -13,9 +13,9 @@ opertors(6 types 1.arithmetic(+ - * / \ ^ % +x -x),
 6. bitwise operator (& | ~ << >>))
 common control statements
 - Conditional constructs Statements (if end, if else end,if elseif else end,nested if)
-- looping constructs (for , while)
+- looping constructs (for , while) 
+  note: global variable usage
 - control statements jumping(break,continue)
-loop
 functions
 writing commands
 Mathematical operations
