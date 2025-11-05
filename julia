@@ -17,7 +17,8 @@ common control statements
 - looping constructs (for , while) 
   note: global variable usage
 - control statements jumping(break,continue)
-functions
+user defined functions
+recursive functions
 writing commands
 Mathematical operations
 Arrays[]
