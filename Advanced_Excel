@@ -150,3 +150,18 @@ sh.Cells(11, 3) = avg
 ans = Application.Evaluate("sum(c2:c5)")
 sh.Cells(12, 3) = ans
 ===================================================
+Dim arr() As Integer
+Dim i, j, rs, cs As Integer
+Private Sub CommandButton1_Click()
+Set sh = ThisWorkbook.Sheets("array2")
+rs = InputBox("enter row size")
+cs = InputBox("enter col size")
+ReDim arr(rs, cs)
+For i = 1 To rs
+For j = 1 To cs
+arr(i - 1, j - 1) = InputBox("enter array value at index:" & i & j)
+sh.Cells(i, j) = arr(i - 1, j - 1)
+Next j
+Next i
+
+End Sub
