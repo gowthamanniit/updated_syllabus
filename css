@@ -34,7 +34,7 @@ Box shadow, double color(linear,radial gradient),
 
 multilist(nested list), table-border collapse
 
-grid layout (display:grid, display-template-columns:auto auto auto)
+grid layout (display:grid,grid-template-columns:auto auto auto)
 
 mobile responsive
 =================================================================
