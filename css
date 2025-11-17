@@ -261,6 +261,8 @@ nested list
 .container {
   display: grid;
   grid-template-columns: auto auto auto;
+  align-content:center; /*(vertically center position)*/
+	text-align: center; /* horizontally center */
   background-color: dodgerblue;
   padding: 10px;
 }
@@ -279,4 +281,148 @@ nested list
   <div>4</div>
   <div>5</div>
 </div>
+============grid ex 2===============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #container
+        {
+            display: grid;
+            grid-template-columns: auto auto 35%;
+        }
+        #container div
+        {
+            background-color: gray;
+            padding: 20px;
+            margin:10px;            
+            height: 200px;
+            align-content: center;
+            text-align: center;
+            border:5px solid red;
+            font-size: 20px;
+            overflow: auto; /* hidden visible normal scroll auto */
+            text-align: justify;
+            
+            transition-duration: .5s;
+            transition-property: margin;            
+        }
+        #container div:hover
+        {
+            margin-top:-1px;
+            cursor: pointer;
+        }
+        h1
+        {
+            color: red;
+        }
+        span
+        {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae distinctio est provident excepturi molestias, cupiditate aperiam facilis iusto eum laboriosam a voluptates assumenda laborum vero libero delectus, nam hic maiores. Esse quod sapiente, totam accusamus a adipisci deserunt necessitatibus reprehenderit accusantium, ea possimus commodi numquam obcaecati nulla neque nobis omnis libero, dolorum maiores quae! Iste ex blanditiis necessitatibus eveniet excepturi amet doloribus, ab illo aliquid dolor unde dolore maiores reprehenderit similique nemo mollitia iusto autem recusandae tempore pariatur, delectus omnis numquam? Adipisci modi earum sit pariatur, eligendi veritatis quidem sunt nesciunt quia esse expedita consectetur cum ut veniam sapiente laboriosam.</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>    
+    <h1>Hello <span>World!!!</span></h1>
+</body>
+</html>
 ==========================grid end==============================
+flexbox:
+	justify-content
+	align-items
+	flex-direction (default: rows)
+    gap
+    flex-wrap
+flex-grow
+flex-shrink
+flex-basis
+flex
+order
+================================================================
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flexbox</title>
+<style type="text/css">
+	.flex-wrapper{
+		background-color: gray;
+		margin: 50px;
+		padding:10px;
+		display: flex;
+        gap:10px;
+        /* flex-wrap: wrap; */ /*test with zoom in: one by one*/
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse;*/ /* see riverse directiondz c                     */
+		/* flex-direction: column; */ /*default: row*/
+		align-items: center;
+/*		align-items: flex-start;*/
+/*		align-items: flex-end;*/
+
+/*		justify-content: center;*/
+/*		justify-content: space-around;*/
+/*		justify-content: space-between;*/
+		justify-content: space-evenly;
+/*		justify-content: start;*/
+/*		justify-content: end;*/
+	}
+	.e1{
+		background-color: red;
+		width:100px;
+        align-content: center;
+        flex:1;
+        order:2;
+	}
+	.e2{
+		 background-color: green;
+		 height:100px;
+         flex:2;
+         order:1;
+	}
+	.e3{
+		 background-color: blue;
+		 height: 300px;
+         flex:3;
+         order:3;
+	}
+	.e4{
+		 background-color: yellow;
+         flex: 4;
+         order:5;
+	}
+	.e5{
+		 background-color: pink;
+         flex: 5;
+         order:4;
+	}
+</style>
+</head>
+<body>
+	<div class="flex-wrapper">
+		<div class="e1">html</div>
+		<div class="e2">css</div>
+		<div class="e3">element</div>
+		<div class="e4">language</div>
+		<div class="e5">learn
+		</div>
+
+	</div>
+</body>
+</html>
+=======================================flexbox end=================
