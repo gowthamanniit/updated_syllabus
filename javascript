@@ -5,7 +5,8 @@
  - concatenation or joining operator  : +
  - datatypes (typeof)
  - operators
- - Event Handling (basic- onclick, onload, onblur, onfocus,onmouseover,onmouseout,onkeyup,onkeydown)
+ - Event Handling (basic- onclick, onload, onblur, 
+onfocus,onmouseover,onmouseout,onkeyup,onkeydown,onsubmit)
  - display output (DOM- write,innerHTML,getElementById,getElementsByTagName,
 getElementsByName)
  - conversion str to int, str to float
