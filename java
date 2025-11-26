@@ -1,14 +1,17 @@
 java syllabus:
 ==========
-1) introduction- invented by ,history, environment-setup,  permanent path ,source,class , jvm , simple program,escape sequence.
+1) introduction- invented by ,history, environment-setup,  permanent path 
+	,source,class , jvm , simple program,escape sequence.
 2) datatypes ,
  and constant with concatenation operator or joining operator,comment line
+	
 find memory location of variable and object.
 3) operator
 4) how to get value at run time or dynamic?
 - Scanner, DataInputStream,BufferedReader,Command line(passing main )
 5) how to use Eclipse?
-6) string functions(length,toUpperCase,toLowerCase,charAt,indexOf,lastIndexOf,trim,replace,startsWith,endsWith,contains,substring,  compareTo, equals, ignoreCase, hashCode)
+6) string functions(length,toUpperCase,toLowerCase,charAt,indexOf,lastIndexOf,trim,replace,
+					startsWith,endsWith,contains,substring,  compareTo, equals, ignoreCase, hashCode)
 6.1)type conversions
 6) control statements(if, if else, if elseif, nested if)
 7) switch case
