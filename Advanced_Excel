@@ -1,3 +1,11 @@
+Pre-request: Normal Excel:
+- sum,average,if,rank
+- vlookup,hlookup,sumif,countif
+- absolute reference(not change cell when copied/dragged), 
+- relative reference(change based on the formula's position when copied/dragged)
+- left,len,right,concatenate,upper,lower,proper,find(index),iferror
+- pivot table - summarize overall data (count,sum,average,max,min)
+
 advanced excel :
 
 variable declaration
