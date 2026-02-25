@@ -5,6 +5,10 @@ Pre-request: Normal Excel:
 - relative reference(change based on the formula's position when copied/dragged)
 - left,len,right,concatenate,upper,lower,proper,find(index),iferror
 - pivot table - summarize overall data (count,sum,average,max,min)
+- conditional formatting - < > = != between,contains
+- remove duplicates data - data-->remove duplicates
+- Goal seek
+- data validation
 
 advanced excel :
 
