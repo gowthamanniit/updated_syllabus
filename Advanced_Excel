@@ -177,3 +177,20 @@ Next j
 Next i
 
 End Sub
+
+error handling:
+Dim imgname As String
+Private Sub CommandButton1_Click()
+
+Set sh = ThisWorkbook.Sheets("imgshow")
+imgname = sh.Cells(2, 3)
+Image1.PictureSizeMode = fmPictureSizeModeStretch
+On Error GoTo gowthaman
+Image1.Picture = LoadPicture("d:/images/" & imgname)
+Exit Sub
+gowthaman:
+Image1.Picture = LoadPicture("d:/images/imagenotfound.jpg")
+'MsgBox "file not found", vbCritical
+Err.Clear
+End Sub
+
